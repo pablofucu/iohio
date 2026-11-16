@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GM² · El Puto Circo</title>
 <meta name="description" content="Expediente Forense de El Puto Circo: Anatomía Completa de Daniel Bruno (GM / Perchita / El Prensas).">
-<meta name="theme-color" content="#050706">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 112'%3E%3Crect x='4' y='8' width='52' height='98' rx='7' fill='%23111'/%3E%3Cpath d='M18 30l4 12-5 9 5 12-4 14M30 26l4 14-5 10 5 14-4 16M42 30l4 12-5 9 5 12-4 14' stroke='%239dff00' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0b0e0d">
+<link rel="icon" href="assets/img/monster.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@500;600;700&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("gm-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="locked">
+<body>
 
-<!-- ================= SVG SPRITE ================= -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <linearGradient id="gCan" x1="0" x2="1">
@@ -37,49 +37,9 @@
     </radialGradient>
   </defs>
 
-  <!-- Lata energética (homenaje Monster): body via --can-body -->
-  <symbol id="i-can" viewBox="0 0 60 112">
-    <rect x="4" y="9" width="52" height="96" rx="7" style="fill:var(--can-body,url(#gCan))"/>
-    <rect x="4" y="9" width="52" height="96" rx="7" fill="none" stroke="rgba(255,255,255,.08)"/>
-    <rect x="6" y="5" width="48" height="9" rx="4" fill="url(#gRim)"/>
-    <rect x="6" y="101" width="48" height="8" rx="4" fill="url(#gRim)"/>
-    <path d="M17 28l4 12-5 9 5 13-4 15M30 24l4 14-5 10 5 15-4 17M43 28l4 12-5 9 5 13-4 15" style="stroke:var(--claw,#9dff00)" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M17 28l4 12-5 9 5 13-4 15M30 24l4 14-5 10 5 15-4 17M43 28l4 12-5 9 5 13-4 15" style="stroke:var(--claw,#9dff00)" stroke-width="11" fill="none" stroke-linecap="round" opacity=".18"/>
-    <rect x="8" y="88" width="44" height="6" rx="2" fill="rgba(255,255,255,.07)"/>
-    <rect x="11" y="12" width="5" height="88" rx="2.5" fill="rgba(255,255,255,.10)"/>
-    <g class="tab"><rect x="22" y="0" width="16" height="7" rx="3.5" fill="#d9e0e3"/><rect x="27" y="2" width="6" height="3" rx="1.5" fill="#6f7a7f"/></g>
-  </symbol>
 
-  <!-- Jarra de radler -->
-  <symbol id="i-radler" viewBox="0 0 96 110">
-    <path d="M66 36h10c9 0 14 7 14 18v12c0 11-6 18-15 18h-9" fill="none" stroke="rgba(220,240,255,.75)" stroke-width="7"/>
-    <path d="M10 28h58l-4 74c0 4-3 7-7 7H21c-4 0-7-3-7-7z" fill="rgba(220,240,255,.18)" stroke="rgba(220,240,255,.8)" stroke-width="3"/>
-    <path d="M14 40h50l-3 60c0 3-2 5-5 5H22c-3 0-5-2-5-5z" fill="url(#gBeer)"/>
-    <g fill="rgba(255,255,255,.7)"><circle cx="28" cy="80" r="2"/><circle cx="40" cy="64" r="1.6"/><circle cx="50" cy="88" r="2.2"/><circle cx="34" cy="94" r="1.4"/><circle cx="54" cy="58" r="1.4"/></g>
-    <path d="M8 34c0-8 6-12 12-11 2-7 10-10 16-6 4-6 14-6 18 0 6-3 14 1 14 8 5 1 7 5 6 9-1 5-6 6-10 5H14c-5 0-7-3-6-5z" fill="#fffaf0"/>
-    <circle cx="74" cy="22" r="13" fill="#ffe14a" stroke="#fff6b0" stroke-width="3"/>
-    <g stroke="#f6c400" stroke-width="1.6"><path d="M74 10v24M62 22h24M66 14l16 16M82 14L66 30"/></g>
-    <rect x="18" y="32" width="5" height="68" rx="2.5" fill="rgba(255,255,255,.25)"/>
-  </symbol>
 
-  <!-- Emblema estilo Smite -->
-  <symbol id="i-smite" viewBox="0 0 120 100">
-    <path d="M60 18C44 4 18 4 2 14c12 2 20 8 24 16-10-2-18 0-24 4 12 2 22 8 26 18-8 0-14 2-18 6 14 0 26 6 32 16zM60 18c16-14 42-14 58-4-12 2-20 8-24 16 10-2 18 0 24 4-12 2-22 8-26 18 8 0 14 2 18 6-14 0-26 6-32 16z" fill="url(#gGold)" stroke="#5b3d07" stroke-width="1.5"/>
-    <path d="M60 14l22 10v22c0 18-10 30-22 40-12-10-22-22-22-40V24z" fill="#13254f" stroke="url(#gGold)" stroke-width="5"/>
-    <path d="M64 26L50 52h10l-6 22 18-30H61l6-18z" fill="#ffe7a3" stroke="#e9b44c" stroke-width="1.5" stroke-linejoin="round"/>
-  </symbol>
 
-  <!-- Emblema estilo Helldivers -->
-  <symbol id="i-hd" viewBox="0 0 120 120">
-    <circle cx="60" cy="60" r="56" fill="#0b0b0b" stroke="#ffe81f" stroke-width="6"/>
-    <circle cx="60" cy="60" r="44" fill="none" stroke="#ffe81f" stroke-width="2" stroke-dasharray="6 5"/>
-    <path d="M14 58c10-4 22-4 30 2l-2-10c-8-6-20-6-28-2zM106 58c-10-4-22-4-30 2l2-10c8-6 20-6 28-2z" fill="#ffe81f"/>
-    <path d="M60 28c-15 0-24 10-24 24 0 8 4 14 8 17v10h32V69c4-3 8-9 8-17 0-14-9-24-24-24z" fill="#ffe81f"/>
-    <path d="M47 50h11v9H45zM62 50h11l2 9H62z" fill="#0b0b0b"/>
-    <path d="M56 64l4-6 4 6z" fill="#0b0b0b"/>
-    <path d="M50 79v8M56 79v9M64 79v9M70 79v8" stroke="#0b0b0b" stroke-width="3"/>
-    <path d="M40 92h40l-6 10H46z" fill="#ffe81f"/>
-  </symbol>
 
   <!-- Bloque de hierba -->
   <symbol id="i-grass" viewBox="0 0 100 100" shape-rendering="crispEdges">
@@ -324,114 +284,129 @@
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
   <symbol id="i-exit" viewBox="0 0 24 24"><path d="M14 4h5v16h-5M10 8l-4 4 4 4M6 12h10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="1.6" fill="currentColor"/><circle cx="16" cy="16" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/><circle cx="16" cy="8" r="1.6" fill="currentColor"/><circle cx="8" cy="16" r="1.6" fill="currentColor"/></symbol>
+  <!-- iconos de navegación -->
+  <symbol id="n-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="n-timeline" viewBox="0 0 24 24"><path d="M6 3v18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="6" cy="7" r="2.4" fill="currentColor"/><circle cx="6" cy="17" r="2.4" fill="currentColor"/><path d="M11 7h9M11 17h6M11 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="n-list" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 9h10M7 13h10M7 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="n-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="n-vs" viewBox="0 0 24 24"><path d="M4 4l9 9M4 4h4M4 4v4M20 4l-9 9M20 4h-4M20 4v4M7 15l-3 3 2 2 3-3M17 15l3 3-2 2-3-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="n-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-moonl" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="cursor-glow" aria-hidden="true"></div>
-
-<!-- ================= LOADER ================= -->
 <div class="loader" id="loader" aria-hidden="true">
   <div class="loader-inner">
-    <svg class="loader-can" viewBox="0 0 60 112"><use href="#i-can"/></svg>
+    <img class="loader-can" src="assets/img/monster.webp" alt="">
     <div class="loader-text">Abriendo el circo<span>_</span></div>
   </div>
 </div>
 
-<!-- ================= NAV ================= -->
+<!-- ================= TOP BAR ================= -->
 <header class="topbar" id="topbar">
-  <a class="brand" href="#top" aria-label="Inicio">
-    <svg viewBox="0 0 60 112" aria-hidden="true"><use href="#i-can"/></svg>
-    <span><b>GM²</b><small>El Puto Circo · 2022–2026</small></span>
+  <a class="brand" href="#inicio" data-nav="inicio" aria-label="Inicio">
+    <img src="assets/img/monster.webp" alt="" width="16" height="40">
+    <span><b>GM²</b><small>El Puto Circo</small></span>
   </a>
-  <button class="nav-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars" aria-hidden="true"></span>Índice</button>
-  <div class="progress" id="progress"></div>
+  <nav class="tabs" aria-label="Secciones">
+    <a href="#inicio" data-nav="inicio">Inicio</a>
+    <a href="#timeline" data-nav="timeline">Timeline</a>
+    <a href="#incidentes" data-nav="incidentes">Incidentes</a>
+    <a href="#stats" data-nav="stats">Estadísticas</a>
+    <a href="#rivales" data-nav="rivales">Rivales</a>
+    <a href="#gm" data-nav="gm">El GM</a>
+  </nav>
+  <div class="top-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="Buscar incidente"><svg viewBox="0 0 24 24"><use href="#i-search"/></svg></button>
+    <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema claro/oscuro"><svg class="sun" viewBox="0 0 24 24"><use href="#i-sun"/></svg><svg class="moon" viewBox="0 0 24 24"><use href="#i-moonl"/></svg></button>
+  </div>
 </header>
 
-<nav class="menu" id="menu" aria-label="Índice">
-  <button class="nav-btn menu-close" id="menuClose">✕ Cerrar</button>
-  <ol>
-    <li style="--i:0"><a href="#top"><span>00</span><b>Portada</b></a></li>
-    <li style="--i:1"><a href="#prologo"><span>P</span><b>Prólogo: La Tragedia Griega en Cuatro Actos</b></a></li>
-    <li style="--i:2"><a href="#cap1"><span>I</span><b>Radiografía Estadística</b></a></li>
-    <li style="--i:3"><a href="#cap2"><span>II</span><b>El Lore de los Apodos</b></a></li>
-    <li style="--i:4"><a href="#cap3"><span>III</span><b>Autopsia Lingüística</b></a></li>
-    <li style="--i:5"><a href="#cap4"><span>IV</span><b>Anatomía Psicológica</b></a></li>
-    <li style="--i:6"><a href="#cap5"><span>V</span><b>Auditoría de la Razón y Mapa de Rivalidades</b></a></li>
-    <li style="--i:7"><a href="#cap6"><span>VI</span><b>Crónica de los Grandes Hitos</b></a></li>
-    <li style="--i:8"><a href="#catalogo"><span>144</span><b>Catálogo Maestro de los 144 Incidentes</b></a></li>
-    <li style="--i:9"><a href="#epilogo"><span>E</span><b>Epílogo · La Vida Después de Perchita</b></a></li>
-  </ol>
-</nav>
+<main id="app">
 
-<main id="top">
-
-<!-- ================= HERO ================= -->
-<section class="hero" id="hero">
-  <div class="hero-floaters" aria-hidden="true">
-    <div class="floater f-can" data-depth="0.35" style="left:4%;top:13%;"><button class="can-btn" tabindex="-1" aria-label="Lata"><svg viewBox="0 0 60 112" style="width:clamp(40px,9vw,84px);--dur:6s;--r1:-14deg;--r2:-4deg"><use href="#i-can"/></svg></button></div>
-    <div class="floater f-hd" data-depth="0.6" style="right:5%;top:12%;"><svg viewBox="0 0 120 120" style="width:clamp(60px,13vw,130px);--dur:8s;--r1:6deg;--r2:-6deg"><use href="#i-hd"/></svg></div>
-    <div class="floater f-stk" data-depth="0.6" style="right:1%;top:calc(12% + clamp(62px,13vw,132px));"><div class="sticker hd" style="--dur:5s;--r1:4deg;--r2:9deg">Helldivers o me acuesto</div></div>
-    <div class="floater" data-depth="0.25" style="left:2%;bottom:16%;"><svg viewBox="0 0 96 110" style="width:clamp(56px,11vw,110px);--dur:7s;--r1:-6deg;--r2:6deg"><use href="#i-radler"/></svg></div>
-    <div class="floater" data-depth="0.5" style="right:4%;bottom:14%;"><svg viewBox="0 0 120 100" style="width:clamp(70px,14vw,150px);--dur:9s;--r1:-4deg;--r2:4deg"><use href="#i-smite"/></svg></div>
-    <div class="floater hide-sm" data-depth="0.8" style="left:22%;top:8%;"><svg viewBox="0 0 100 100" style="width:clamp(38px,7vw,74px);--dur:6.5s"><use href="#i-grass"/></svg></div>
-    <div class="floater" data-depth="0.45" style="left:18%;bottom:6%;"><svg viewBox="0 0 16 16" style="width:clamp(36px,6vw,64px);--dur:5.5s"><use href="#i-pack"/></svg></div>
-    <div class="floater hide-sm" data-depth="0.7" style="right:24%;bottom:5%;"><svg viewBox="0 0 120 80" style="width:clamp(56px,9vw,104px);--dur:7.5s;--r1:8deg;--r2:-10deg"><use href="#i-chopped"/></svg></div>
-    <div class="floater hide-sm" data-depth="0.3" style="right:26%;top:7%;"><button class="can-btn" tabindex="-1" aria-label="Lata"><svg viewBox="0 0 60 112" style="width:clamp(30px,5vw,56px);--can-body:url(#gCanW);--claw:#3de1ff;--dur:6s;--r1:12deg;--r2:20deg"><use href="#i-can"/></svg></button></div>
-    <div class="floater hide-sm" data-depth="0.9" style="left:30%;bottom:3%;"><svg viewBox="0 0 100 80" style="width:clamp(40px,6vw,70px);--dur:6s"><use href="#i-hold"/></svg></div>
-  </div>
-  <div class="gm-mega" aria-hidden="true" data-depth="-0.2">GM<sup>2</sup></div>
-  <div class="wrap hero-content">
-    <span class="kicker" data-r>56.941 registros · 4 años y 5 meses</span>
-    <h1 data-r style="--d:.1s">
-      <span class="pre">Expediente Forense de</span>
-      <span class="main glitch" data-text="El Puto Circo">El Puto <i>Circo</i></span>
-    </h1>
-    <h2 data-r style="--d:.2s">Anatomía Completa de Daniel Bruno (<code>GM</code> / <code>Perchita</code> / <code>El Prensas</code>)</h2>
-    <div class="aliases" data-r style="--d:.3s" aria-hidden="true">
-      <span class="alias" style="--d:0s">GM</span><span class="alias" style="--d:.5s">Perchita</span><span class="alias" style="--d:1s">El Prensas</span>
+<!-- ======================================================
+     INICIO
+     ====================================================== -->
+<section class="view" data-view="inicio" id="v-inicio">
+  <div class="hero">
+    <div class="hero-floaters" aria-hidden="true">
+      <div class="floater f1" data-depth="0.35"><button class="can-btn" tabindex="-1"><img src="assets/img/monster.webp" alt=""></button></div>
+      <div class="floater f2" data-depth="0.55"><img src="assets/img/radler.webp" alt=""></div>
+      <div class="floater f3" data-depth="0.45"><img src="assets/img/helldivers.webp" alt=""><span class="sticker hd">Helldivers o me acuesto</span></div>
+      <div class="floater f4" data-depth="0.3"><img src="assets/img/smite.webp" alt=""></div>
+      <div class="floater f5" data-depth="0.6"><img src="assets/img/mochila.webp" alt=""></div>
     </div>
-    <div data-r style="--d:.45s"><a class="scroll-hint" href="#alcance"><span class="mouse"></span>DESLIZA</a></div>
-  </div>
-</section>
-
-<!-- ================= ALCANCE ================= -->
-<section id="alcance" style="padding-top:20px">
-  <div class="wrap narrow">
-    <div class="callout" data-r>
-      <div class="callout-tag">⚑ Important</div>
-      <p><strong>Alcance auditado:</strong> Se han procesado y verificado los <strong>56.941 registros</strong> íntegros del historial exportado de WhatsApp (<code>56.630</code> mensajes reales de usuario + <code>311</code> eventos de sistema, corrigiendo un fragmento ficticio generado con IA que Pablo pegó el <code>23/03/2025</code>), abarcando desde el <strong>21 de mayo de 2022</strong> hasta el <strong>16 de octubre de 2026</strong> (<strong>4 años y 5 meses</strong>).</p>
-    </div>
-    <div class="stats" aria-hidden="true">
-      <div class="stat" data-r style="--d:0s"><span class="v" data-count="56941">0</span><span class="l">registros auditados</span></div>
-      <div class="stat" data-r style="--d:.08s"><span class="v" data-count="56630">0</span><span class="l">mensajes reales de usuario</span></div>
-      <div class="stat" data-r style="--d:.16s"><span class="v" data-count="311">0</span><span class="l">eventos de sistema</span></div>
-      <div class="stat" data-r style="--d:.24s"><span class="v">4a 5m</span><span class="l">21/05/2022 → 16/10/2026</span></div>
+    <div class="wrap hero-content">
+      <span class="kicker" data-r>Expediente Forense · 21/05/2022 – 16/10/2026</span>
+      <h1 data-r style="--d:.08s"><span class="glitch" data-text="El Puto Circo">El Puto <i>Circo</i></span></h1>
+      <p class="hero-sub" data-r style="--d:.16s">Anatomía Completa de Daniel Bruno (<code>GM</code> / <code>Perchita</code> / <code>El Prensas</code>)</p>
+      <div class="hero-cta" data-r style="--d:.24s">
+        <a class="btn primary" href="#timeline" data-nav="timeline"><svg viewBox="0 0 24 24"><use href="#n-timeline"/></svg>Ver el timeline</a>
+        <a class="btn" href="#incidentes" data-nav="incidentes"><svg viewBox="0 0 24 24"><use href="#n-list"/></svg>Buscar incidente</a>
+      </div>
     </div>
   </div>
-</section>
 
-<div class="marquee" aria-hidden="true"><div class="mq-track"><span>Chavales</span><span>Aro</span><span>Discrepo</span><span>Chúpala</span><span>Terrible</span><span>Evidentemente</span><span>Ameisin</span><span>Mentira</span><span>Porq</span><span>Q si Pablo q si</span><span>Chavales</span><span>Aro</span><span>Discrepo</span><span>Chúpala</span><span>Terrible</span><span>Evidentemente</span><span>Ameisin</span><span>Mentira</span><span>Porq</span><span>Q si Pablo q si</span></div></div>
-
-<!-- ================= PRÓLOGO ================= -->
-<section id="prologo">
-  <div class="wrap narrow">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">P</div>
-      <div class="deco" aria-hidden="true"><svg viewBox="0 0 16 16" style=""><use href="#i-pack"/></svg></div>
-      <div class="chapter-kicker">Prólogo</div>
-      <h2 class="chapter-title">La Tragedia Griega <em>en Cuatro Actos</em></h2>
+  <div class="wrap">
+    <div class="block-head" data-r><h2>El caso en 10 segundos</h2><p>Toca cualquier dato para ir a su sección.</p></div>
+    <div class="kpis">
+      <a class="kpi" href="#stats" data-nav="stats" data-r><span class="v" data-count="12999">0</span><span class="l">mensajes · nº 1 del chat <em>(22,95%)</em></span></a>
+      <a class="kpi red" href="#incidentes" data-nav="incidentes" data-r style="--d:.04s"><span class="v" data-count="144">0</span><span class="l">incidentes catalogados</span></a>
+      <a class="kpi yel" href="#stats" data-nav="stats" data-goto="razon" data-r style="--d:.08s"><span class="v" data-count="9.7" data-dec="1" data-suffix="%">0</span><span class="l">de veces que llevaba razón plena</span></a>
+      <a class="kpi" href="#timeline" data-nav="timeline" data-r style="--d:.12s"><span class="v">4</span><span class="l">exilios: 16, 69, 84 y 137 días</span></a>
+      <a class="kpi" href="#stats" data-nav="stats" data-goto="records" data-r style="--d:.16s"><span class="v" data-count="97">0</span><span class="l">mensajes seguidos (96 «Chavales»)</span></a>
+      <a class="kpi" href="#rivales" data-nav="rivales" data-r style="--d:.2s"><span class="v">79,2%</span><span class="l">de las broncas, con Pablo</span></a>
+      <a class="kpi" href="#gm" data-nav="gm" data-r style="--d:.24s"><span class="v" data-count="62">0</span><span class="l">cambios compulsivos de nombre del grupo</span></a>
+      <a class="kpi red" href="#timeline" data-nav="timeline" data-goto="ban" data-r style="--d:.28s"><span class="v">0–6</span><span class="l">votación final · <em>"Al carajo."</em></span></a>
     </div>
+
+    <div class="block-head" data-r><h2>Explora el expediente</h2></div>
+    <div class="explore">
+      <a class="ex-card" href="#timeline" data-nav="timeline" data-r><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-timeline"/></svg></span><b>Timeline</b><span>Los 144 incidentes en orden, con exilios, episodios y el epílogo.</span><span class="ex-go">→</span></a>
+      <a class="ex-card" href="#incidentes" data-nav="incidentes" data-r style="--d:.05s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-list"/></svg></span><b>Incidentes</b><span>Glosario buscable: filtra por año, veredicto, rival o categoría.</span><span class="ex-go">→</span></a>
+      <a class="ex-card" href="#stats" data-nav="stats" data-r style="--d:.1s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-chart"/></svg></span><b>Estadísticas</b><span>Mensajes, récords, Hora Vampiro y el desplome del 9,7%.</span><span class="ex-go">→</span></a>
+      <a class="ex-card" href="#rivales" data-nav="rivales" data-r style="--d:.15s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-vs"/></svg></span><b>Rivales</b><span>Con quién se pelea, cuánto y cómo acabó cada relación.</span><span class="ex-go">→</span></a>
+      <a class="ex-card wide" href="#gm" data-nav="gm" data-r style="--d:.2s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-user"/></svg></span><b>El GM</b><span>Ficha del personaje: gustos, apodos, Diccionario Perchita, el Ciclo y los 8 patrones.</span><span class="ex-go">→</span>
+        <span class="ex-logos" aria-hidden="true"><img src="assets/img/monster.webp" alt=""><img src="assets/img/helldivers.webp" alt=""><img src="assets/img/smite.webp" alt=""><img src="assets/img/mochila.webp" alt=""><img src="assets/img/radler.webp" alt=""></span></a>
+    </div>
+
+    <div class="block-head" data-r><h2>Los 7 Grandes Episodios del <em>Daniverso</em></h2><p>Desliza y toca uno para leerlo.</p></div>
+    <div class="carousel" id="epCarousel"></div>
+
+    <div class="block-head" data-r><h2>Cómo empezó y cómo acabó</h2></div>
+    <div class="split-2">
+      <div class="chat" data-r>
+        <div class="chat-head"><div class="av"><img src="assets/img/monster.webp" alt=""></div><div><b>Se acabó la dictadura</b><small>21/05/2022 · 07:33</small></div></div>
+        <div class="sys">Daniel Bruno creó el grupo "Pablo otako "</div>
+        <div class="sys">Daniel Bruno cambió el nombre del grupo a "Se acabó la dictadura"</div>
+        <div class="bubble first" data-type style="--who:var(--acc-ink)"><span class="who">Daniel Bruno (El Prensas)</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body"><em>"Un nuevo y mejor grupo donde todos somos admin. Se acabó la dictadura de Pablo."</em> <span class="meta">07:34</span></span></div>
+      </div>
+      <div class="chat" data-r style="--d:.1s">
+        <div class="chat-head"><div class="av"><img src="assets/img/mochila.webp" alt=""></div><div><b>El Puto Circo</b><small>23/09/2025 · 13:20</small></div></div>
+        <div class="bubble first" style="--who:#ffc93d"><span class="who">Votación · mod de mochilas</span>Pierde <b>0–5</b> (Rubén) y <b>0–6</b> (Fernando)</div>
+        <div class="bubble out first" data-type><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body"><em>"Al carajo."</em><span class="meta ticks">13:20</span></span></div>
+        <div class="sys"><code>Eduardo Merino (Amigo Ollega) quitó a Daniel Bruno (El Prensas)</code></div>
+      </div>
+    </div>
+
+    <details class="more" data-r>
+      <summary><span>Leer el prólogo completo · <em>La Tragedia Griega en Cuatro Actos</em></span><span class="pm" aria-hidden="true"></span></summary>
+      <div class="more-body narrow">
+
 
     <p class="lead" data-r>El <strong>21 de mayo de 2022 a las 07:33 de la mañana</strong>, Daniel Bruno —alias <em>El Prensas</em>, posteriormente ascendido a <em>Perchita</em> y finalmente canonizado en los altares del meme como <strong>GM (<em>Guarra Mayor</em> → <em>Gordus Mamonis Mamonis</em>)</strong>— fundó un nuevo grupo llamado <code>"Pablo otako "</code> que a los dos minutos rebautizó como <code>"Se acabó la dictadura"</code>. Su manifiesto fundacional era digno de la Revolución Francesa:</p>
 
     <div class="chat" data-r>
       <div class="chat-head">
-        <div class="av"><svg viewBox="0 0 60 112"><use href="#i-can"/></svg></div>
+        <div class="av"><img src="assets/img/monster.webp" alt=""></div>
         <div><b>Se acabó la dictadura</b><small>Daniel Bruno, tú</small></div>
       </div>
       <div class="sys">Daniel Bruno creó el grupo "Pablo otako "</div>
       <div class="sys">Daniel Bruno cambió el nombre del grupo a "Se acabó la dictadura"</div>
-      <div class="bubble first" data-type style="--who:#9dff00">
+      <div class="bubble first" data-type style="--who:var(--acc-ink)">
         <span class="who">Daniel Bruno (El Prensas)</span>
         <span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span>
         <span class="bubble-body"><em>"Un nuevo y mejor grupo donde todos somos admin. Se acabó la dictadura de Pablo."</em> <span class="meta">(<code>21/05/2022 07:34</code>)</span></span>
@@ -440,16 +415,6 @@
 
     <p data-r>Ciento cuarenta y cuatro broncas, nueve salidas portazo en mano, tres expulsiones, un golpe de estado, cuatro exilios temporales (de 16, 69, 84 y 137 días), un bote de chopped perruno devorado y <strong>62 cambios compulsivos de nombre del grupo</strong> después, el <strong>23 de septiembre de 2025 a las 13:20</strong>, Eduardo Merino ejecutaba el veredicto definitivo tras escucharle gritar sobre mochilas virtuales de Minecraft:</p>
 
-    <div class="stats" aria-hidden="true">
-      <div class="stat red" data-r><span class="v" data-count="144">0</span><span class="l">broncas</span><svg class="ico" viewBox="0 0 100 100"><use href="#i-target"/></svg></div>
-      <div class="stat" data-r style="--d:.06s"><span class="v" data-count="9">0</span><span class="l">salidas portazo en mano</span><svg class="ico" viewBox="0 0 24 24" style="color:var(--neon)"><use href="#i-exit"/></svg></div>
-      <div class="stat yel" data-r style="--d:.12s"><span class="v" data-count="3">0</span><span class="l">expulsiones</span></div>
-      <div class="stat" data-r style="--d:.18s"><span class="v" data-count="1">0</span><span class="l">golpe de estado</span><svg class="ico" viewBox="0 0 100 80"><use href="#i-crown"/></svg></div>
-      <div class="stat yel" data-r style="--d:.24s"><span class="v" data-count="4">0</span><span class="l">exilios: 16, 69, 84 y 137 días</span></div>
-      <div class="stat red" data-r style="--d:.3s"><span class="v" data-count="1">0</span><span class="l">bote de chopped perruno</span><svg class="ico" viewBox="0 0 120 80"><use href="#i-chopped"/></svg></div>
-      <div class="stat" data-r style="--d:.36s"><span class="v" data-count="62">0</span><span class="l">cambios de nombre del grupo</span></div>
-      <div class="stat" data-r style="--d:.42s"><span class="v">13:20</span><span class="l">23/09/2025 · el veredicto</span><svg class="ico" viewBox="0 0 16 16"><use href="#i-pack"/></svg></div>
-    </div>
 
     <div class="chat" data-r>
       <div class="bubble out first" data-type><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body"><em>"Al carajo."</em><span class="meta ticks">13:20</span></span></div>
@@ -457,34 +422,136 @@
     </div>
 
     <p data-r>Lo que empezó como una cruzada libertaria contra la tiranía terminó con Daniel expulsado de forma permanente mientras todo el resto del grupo —incluidos los fichajes más recientes que ni siquiera habían vivido sus guerras de 2022— respiraba aliviado viendo caer los mensajes por minuto y votaba <strong>6 a 0</strong> en su contra. Este dossier es la autopsia estadística, lingüística, psicológica y criminalística de ese viaje legendario.</p>
+      </div>
+    </details>
+
+    <div class="verdict-final" data-r>
+      <span class="stamp" aria-hidden="true">BANEADO</span>
+      <div class="callout-tag">☠ Conclusión del Peritaje</div>
+      <p><strong>Conclusión del Peritaje:</strong> Daniel Bruno no fue expulsado por un mod de mochilas ni por un mal día de sueño. Fue expulsado por agotar durante <strong>40 meses</strong> la paciencia colectiva de siete amigos a base de ultimátums, memoria selectiva, ataques personales a parejas y una incapacidad clínica de decir <em>"perdón, la he cagado"</em> antes de pulsar el botón de autodestrucción. <strong>Larga vida al GM².</strong></p>
+    </div>
+
+<div class="callout small" data-r>
+      <div class="callout-tag">⚑ Important</div>
+      <p><strong>Alcance auditado:</strong> Se han procesado y verificado los <strong>56.941 registros</strong> íntegros del historial exportado de WhatsApp (<code>56.630</code> mensajes reales de usuario + <code>311</code> eventos de sistema, corrigiendo un fragmento ficticio generado con IA que Pablo pegó el <code>23/03/2025</code>), abarcando desde el <strong>21 de mayo de 2022</strong> hasta el <strong>16 de octubre de 2026</strong> (<strong>4 años y 5 meses</strong>).</p>
+    </div>
   </div>
 </section>
 
-<div class="marquee alt rev" aria-hidden="true"><div class="mq-track"><span>Helldivers o me acuesto</span><span>Larga vida al GM²</span><span>Steins;Gate</span><span>Un ciclo sin fin</span><span>El Puto Circo</span><span>Helldivers o me acuesto</span><span>Larga vida al GM²</span><span>Steins;Gate</span><span>Un ciclo sin fin</span><span>El Puto Circo</span></div></div>
-
-<!-- ================= CAPÍTULO I ================= -->
-<section id="cap1">
+<!-- ======================================================
+     TIMELINE
+     ====================================================== -->
+<section class="view" data-view="timeline" id="v-timeline" hidden>
   <div class="wrap">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">I</div>
-      <div class="deco" aria-hidden="true"><button class="can-btn" tabindex="-1" aria-label="Lata"><svg viewBox="0 0 60 112" style="--claw:#9dff00"><use href="#i-can"/></svg></button></div>
-      <div class="chapter-kicker">Capítulo I</div>
-      <h2 class="chapter-title">Radiografía <em>Estadística</em><span class="sub">El Hombre que No Callaba ni Estando Expulsado</span></h2>
+    <div class="view-head">
+      <span class="view-kicker">Cronología · 2022 – 2026</span>
+      <h2>Timeline de incidentes</h2>
+      <p>Los 144 incidentes en orden, con exilios, grandes episodios y lo que pasó después del ban. Toca un mes para saltar y un incidente para abrir su ficha.</p>
     </div>
-    <div class="narrow" style="padding:0">
-      <p class="lead" data-r>A pesar de haberse pasado <strong>más de 10 meses fuera del grupo en sus 4 grandes exilios previos</strong> y de llevar <strong>expulsado desde septiembre de 2025 hasta octubre de 2026</strong> (más de un año entero sin poder escribir ni una coma), <strong>Daniel Bruno sigue siendo el nº 1 absoluto en volumen de mensajes de toda la historia del chat</strong>.</p>
+    <div class="heat" id="heat" aria-label="Incidentes por mes"></div>
+    <div class="legend heat-legend"><span><i style="background:var(--acc)"></i>Más incidentes</span><span><i class="striped"></i>Fuera del grupo</span><span><i style="background:var(--no)"></i>Expulsado</span></div>
+    <div class="tl-filters" id="tlFilters">
+      <button class="chip c-s" data-v="S" aria-pressed="false">🟢 Sí</button>
+      <button class="chip c-p" data-v="P" aria-pressed="false">🟡 Parcial</button>
+      <button class="chip c-n" data-v="N" aria-pressed="false">🔴 No</button>
+      <button class="chip" data-big="1" aria-pressed="false">★ Solo grandes episodios</button>
+      <select id="tlRival" aria-label="Filtrar por rival"><option value="">Todos los rivales</option></select>
     </div>
+    <div class="itl" id="itl"></div>
 
-    <h3 class="sec" data-r><span class="n">1.1</span>Clasificación General de Integrantes (2022–2026)</h3>
+    <div class="epilogue" id="epilogo">
+      <div class="view-head small">
+        <span class="view-kicker">Epílogo · Septiembre 2025 – Octubre 2026</span>
+        <h2>La Vida Después de Perchita</h2>
+<p class="lead" data-r>Expulsado el <code>23/09/2025</code> a las <code>13:20</code>, el resto del chat vivió una curiosa transición en tres fases documentadas hasta el cierre del historial (<code>16/10/2026</code>):</p>
+      </div>
+<div class="phases-ep">
+      <article class="phase-card" data-r>
+        <svg class="art" viewBox="0 0 70 100" aria-hidden="true"><use href="#i-card"/></svg>
+        <span class="ph">FASE 1</span>
+        <h4>La Resaca y el Bloqueo Selectivo (<code>24/09 – 16/10/2025</code>):</h4>
+        <p>Al día siguiente, Pablo cuenta que tras intentar mediar, Dani lo ha bloqueado en WhatsApp, ha borrado a casi todos de amigos en Steam y también del <em>Pokémon TCG Pocket</em>. El inventario de bajas de Ale y Pablo es lapidario: <em>"Se ha quedado sin Minecraft, sin grupo de Steam y sin pokémons"</em>, mientras Pablo confiesa: <em>"Lo triste es que sin tenerle es todo más fácil y tranquilo"</em>. Sin embargo, Ale descubre el <code>14/10</code> un detalle revelador: Dani no bloqueó la cuenta de arte de Ale, ni borró del Pokémon o Instagram a Raquel, Elena ni Marta. Como resumió Fernando: <em>"Lo que le interesa al listo"</em>.</p>
+      </article>
+      <article class="phase-card" data-r style="--d:.08s">
+        <svg class="art" viewBox="0 0 100 70" aria-hidden="true"><use href="#i-monta"/></svg>
+        <span class="ph">FASE 2</span>
+        <h4>La Mitificación como Folclore (<code>Octubre 2025 – Marzo 2026</code>):</h4>
+        <p>Sin Dani presente, <strong>GM / Perchita se convirtió en deidad cómica del grupo</strong>: Ale construyó el <em>"Monumento al GM"</em> en Minecraft (<code>21/10/2025</code>); al 100 Montaditos pasaron a llamarlo <strong>"100 GM"</strong> (<code>ene–feb 2026</code>); Fernando recordó con nostalgia <em>"El mod de las mochilas 😭"</em> (<code>05/03/2026</code>) y <em>"el rap del GM"</em>; y cuando Ale justificó un enfado en noviembre diciendo <em>"Es como los enfados de Perchita"</em>, Julián cerró la discusión: <em>"Perchita es un caso bastante extremo"</em>.</p>
+      </article>
+      <article class="phase-card" data-r style="--d:.16s">
+        <svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg>
+        <span class="ph">FASE 3</span>
+        <h4>El Último Espasmo y el Silencio Eterno (<code>08/03/2026 – 16/10/2026</code>):</h4>
+        <p>Incluso fuera del chat, su patrón seguía intacto. El <code>02/01/2026</code> vuelven a comentar en el grupo mensajes suyos por privado haciéndose el ofendido (<em>"Como si fuéramos nosotros los que la hubiéramos liado"</em>). Y el <strong>8 de marzo de 2026</strong>, cuando parecía que por fin iba a quedar con parte del grupo, Edu avisó <em>"Dile que luego amaina"</em> y Ale confirmó la última profecía documentada del historial: <strong><code>"Perchita se ha rajado"</code></strong>. Desde el <code>10 de marzo</code> hasta el <code>16 de octubre de 2026</code>, su nombre no volvió a pronunciarse ni una sola vez.</p>
+      </article>
+    </div>
+<div class="narrow" style="padding:0;margin-top:30px">
+      <div class="chat" data-r>
+        <div class="bubble first" style="--who:#9dff00"><span class="who">Eduardo Merino · 08/03/2026</span>Dile que luego amaina</div>
+        <div class="bubble first" style="--who:#ffc93d" data-type><span class="who">Alejandro Manzano</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body">Perchita se ha rajado</span></div>
+      </div>
+    </div>
+      <div class="monument" id="monument">
+        <div class="mc-grid" id="mcGrid" aria-hidden="true"></div>
+        <div class="pix-caption" aria-hidden="true">MONUMENTO AL GM · 21/10/2025</div>
+        <div class="long-live" aria-hidden="true">Larga vida <br>al <span>GM²</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="panel" data-r id="memberChart">
+<!-- ======================================================
+     INCIDENTES
+     ====================================================== -->
+<section class="view" data-view="incidentes" id="v-incidentes" hidden>
+  <div class="wrap">
+    <div class="view-head">
+      <span class="view-kicker">Glosario · 2022 – 2025</span>
+      <h2>Catálogo de los 144 incidentes</h2>
+      <p>Busca por palabra, filtra y toca un incidente para ver su ficha completa.</p>
+    </div>
+    <div class="cat-controls" id="catControls">
+      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"/></svg><input type="search" id="q" placeholder="chopped, Minecraft, rocódromo, INC-077…" autocomplete="off" aria-label="Buscar incidentes"></label>
+      <div class="filters" id="yearFilters" role="group" aria-label="Filtros"></div>
+      <div class="filter-row2">
+        <select id="rivalSel" aria-label="Filtrar por rival"><option value="">Todos los rivales</option></select>
+        <select id="catSel" aria-label="Filtrar por categoría"><option value="">Todas las categorías</option></select>
+        <select id="sortSel" aria-label="Orden"><option value="asc">Más antiguos primero</option><option value="desc">Más recientes primero</option></select>
+      </div>
+      <div class="cat-count"><span>Mostrando <b id="shown">144</b> de 144</span><span class="cc-actions"><button class="btn-ghost sm" id="clearF">Limpiar</button><button class="btn-ghost sm" id="randomInc"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-dice"/></svg>Aleatorio</button></span></div>
+    </div>
+    <div id="incidents"></div>
+  </div>
+</section>
+
+<!-- ======================================================
+     ESTADÍSTICAS
+     ====================================================== -->
+<section class="view" data-view="stats" id="v-stats" hidden>
+  <div class="wrap">
+    <div class="view-head">
+      <span class="view-kicker">Capítulos I y V</span>
+      <h2>Estadísticas</h2>
+      <p>El hombre que no callaba ni estando expulsado, en números.</p>
+    </div>
+    <nav class="subnav" aria-label="En esta sección">
+      <a href="#s-volumen" data-jump>Volumen</a><a href="#s-records" data-jump>Récords</a><a href="#s-razon" data-jump>¿Tenía razón?</a>
+    </nav>
+
+    <h3 class="sec" id="s-volumen" data-r><span class="n">1.1</span>Clasificación General de Integrantes (2022–2026)</h3>
+    <div class="kpis compact">
+      <div class="kpi" data-r><span class="v" data-count="12999">0</span><span class="l">mensajes · <strong>22,95%</strong> del total</span></div>
+      <div class="kpi" data-r style="--d:.04s"><span class="v">3,79</span><span class="l">palabras por mensaje <em>(mín.)</em></span></div>
+      <div class="kpi" data-r style="--d:.08s"><span class="v" data-count="987">0</span><span class="l">preguntas <em>(#1)</em></span></div>
+      <div class="kpi" data-r style="--d:.12s"><span class="v" data-count="734">0</span><span class="l">risas <em>(#1)</em></span></div>
+    </div>
+<div class="panel" data-r id="memberChart">
       <p class="panel-title">▮ Ranking interactivo</p>
       <p class="panel-sub">Elige la métrica: las barras se reordenan con los datos de la tabla.</p>
       <div class="metric-tabs" role="tablist" id="metricTabs"></div>
       <div class="hbars" id="memberBars"></div>
     </div>
-
-    <details class="tbl-more" id="membersMore" data-r>
+<details class="tbl-more" id="membersMore" data-r>
       <summary><span>Ver tabla completa · 8 integrantes + total</span><span class="pm" aria-hidden="true"></span></summary>
     <div class="tbl-wrap">
       <table class="rt compact" id="membersTable">
@@ -521,15 +588,19 @@
       </table>
     </div>
     </details>
-
-    <div class="narrow" style="padding:0">
-      <div class="callout note" data-r>
+<details class="more" data-r><summary><span>Contexto: el nº 1 absoluto en volumen</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><p class="lead">A pesar de haberse pasado <strong>más de 10 meses fuera del grupo en sus 4 grandes exilios previos</strong> y de llevar <strong>expulsado desde septiembre de 2025 hasta octubre de 2026</strong> (más de un año entero sin poder escribir ni una coma), <strong>Daniel Bruno sigue siendo el nº 1 absoluto en volumen de mensajes de toda la historia del chat</strong>.</p></div></details>
+    <div class="panel share" data-r>
+      <div class="ring" id="shareRing"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" class="bg"/><circle cx="60" cy="60" r="50" class="fg" id="shareFg"/></svg><div class="ring-c"><b>27,91%</b><small>del tráfico estando dentro</small></div></div>
+      <div class="share-txt">
+        <p class="panel-title">▮ El dato demoledor</p>
+        <div class="peaks"><div><b>55,0%</b><span>mayo 2022</span></div><div><b>929</b><span>msgs · abril 2023</span></div><div><b>40,4%</b><span>enero 2025 (837 msgs)</span></div></div>
+<div class="callout note flat">
         <div class="callout-tag">ⓘ Note</div>
         <p><strong>El dato demoledor:</strong> Si medimos únicamente los meses en los que Daniel Bruno estuvo dentro del chat (<code>2022-05</code> a <code>2025-09</code> descontando los meses de exilio total), Daniel acaparó el <strong>27,91%</strong> de todo el tráfico (y <strong>26,06%</strong> contando toda la era pre-ban). En meses pico como <strong>abril de 2023 (929 mensajes)</strong>, <strong>enero de 2025 (837 mensajes, 40,4% del grupo)</strong> o <strong>mayo de 2022 (55,0% del grupo)</strong>, prácticamente monopolizaba la conversación.</p>
       </div>
+      </div>
     </div>
-
-    <div class="panel" data-r>
+<div class="panel" data-r>
       <p class="panel-title">▮ La Montaña Rusa del Circo</p>
       <p class="panel-sub">Dentro, fuera y desterrado: los periodos del documento en una línea temporal (mayo 2022 – octubre 2026).</p>
       <div class="tl" id="timeline"></div>
@@ -537,36 +608,39 @@
       <div class="tl-hint" id="tlHint">← desliza la línea temporal →</div>
     </div>
 
-    <h3 class="sec" data-r><span class="n">1.2</span>Récords Absurdos y la "Hora Vampiro"</h3>
+    <h3 class="sec" id="s-records" data-r><span class="n">1.2</span>Récords Absurdos y la "Hora Vampiro"</h3>
     <div class="records">
-      <article class="record" data-r>
-        <span class="rn">1</span>
-        <p><strong>Ametralladora de texto corto (3,79 palabras/mensaje):</strong> Aunque Daniel envió <strong>1.849 mensajes más que Pablo</strong>, Pablo escribió <strong>13.975 palabras más que él</strong>. ¿Por qué? Porque Daniel fragmenta cada frase en ráfagas frenéticas: promedia <strong>2,43 mensajes seguidos</strong> por turno, acumula <strong>632 ráfagas de 5+ mensajes</strong> y <strong>65 ráfagas de 10+ mensajes</strong>. Su récord histórico —<strong>97 mensajes consecutivos sin que nadie pudiera respirar</strong> (<code>23/05/2022 14:13–14:15</code>)— nació cuando Pablo bromeó <em>"Chupito cada vez que Dani manda un chavales"</em> y Daniel procedió a mandar <code>"Chavales"</code> <strong>96 veces seguidas</strong> rematado con <code>"Pablo puta"</code>.</p>
+      <article class="record" data-r style="--d:0.00s">
+        <div class="rec-top"><span class="rec-v">97</span><span class="rec-l">mensajes consecutivos</span></div>
+        <h5 class="rec-t">Ametralladora de texto corto (3,79 palabras/mensaje)</h5>
         <div class="viz">
           <div class="phone" id="chavalesPhone" aria-hidden="true"></div>
           <div class="phone-hud"><div class="big-count"><span id="chavalesCount">0</span><small>/ 97 mensajes</small></div><button class="btn-ghost" id="chavalesReplay">↻ Repetir ráfaga</button></div>
         </div>
+        <details class="more inline"><summary><span>Leer más</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><p><strong>Ametralladora de texto corto (3,79 palabras/mensaje):</strong> Aunque Daniel envió <strong>1.849 mensajes más que Pablo</strong>, Pablo escribió <strong>13.975 palabras más que él</strong>. ¿Por qué? Porque Daniel fragmenta cada frase en ráfagas frenéticas: promedia <strong>2,43 mensajes seguidos</strong> por turno, acumula <strong>632 ráfagas de 5+ mensajes</strong> y <strong>65 ráfagas de 10+ mensajes</strong>. Su récord histórico —<strong>97 mensajes consecutivos sin que nadie pudiera respirar</strong> (<code>23/05/2022 14:13–14:15</code>)— nació cuando Pablo bromeó <em>"Chupito cada vez que Dani manda un chavales"</em> y Daniel procedió a mandar <code>"Chavales"</code> <strong>96 veces seguidas</strong> rematado con <code>"Pablo puta"</code>.</p></div></details>
       </article>
-      <article class="record" data-r style="--d:.05s">
-        <span class="rn">2</span>
-        <p><strong>Campeón indiscutible del arrepentimiento (<code>Se eliminó este mensaje</code>):</strong> Daniel borró <strong>38 mensajes</strong>, más que <strong>los otros 7 integrantes del grupo juntos</strong> (<code>34</code> sumando a todos).</p>
+      <article class="record" data-r style="--d:0.05s">
+        <div class="rec-top"><span class="rec-v">38</span><span class="rec-l">mensajes borrados · más que los otros 7 juntos</span></div>
+        <h5 class="rec-t">Campeón indiscutible del arrepentimiento (<code>Se eliminó este mensaje</code>)</h5>
         <div class="viz versus" aria-hidden="true">
           <div class="bubble deleted first" style="max-width:100%">🚫 Se eliminó este mensaje</div>
           <div class="vs-row"><span>Daniel Bruno</span><b>38</b><div class="tr"><div class="fl" data-w="100"></div></div></div>
           <div class="vs-row other"><span>Los otros 7 juntos</span><b>34</b><div class="tr"><div class="fl" data-w="89.5"></div></div></div>
         </div>
+        <details class="more inline"><summary><span>Leer más</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><p><strong>Campeón indiscutible del arrepentimiento (<code>Se eliminó este mensaje</code>):</strong> Daniel borró <strong>38 mensajes</strong>, más que <strong>los otros 7 integrantes del grupo juntos</strong> (<code>34</code> sumando a todos).</p></div></details>
       </article>
-      <article class="record" data-r style="--d:.1s">
-        <span class="rn">3</span>
-        <p><strong>El único fugitivo del chat:</strong> <strong>9 salidas voluntarias registradas</strong> (más 2 salidas silenciosas que WhatsApp ocultó a los no-administradores en mayo de 2023 y julio de 2024 cuando solo Antonio era admin) frente a <strong>0 salidas voluntarias</strong> del resto del grupo hasta que el propio Dani consiguió hacer salir a Julián en septiembre de 2025.</p>
+      <article class="record" data-r style="--d:0.10s">
+        <div class="rec-top"><span class="rec-v">9</span><span class="rec-l">salidas voluntarias (+2 silenciosas) · resto: 0</span></div>
+        <h5 class="rec-t">El único fugitivo del chat</h5>
         <div class="viz" aria-hidden="true">
           <div class="doors" id="doors"></div>
           <div class="legend"><span><i style="background:#2d4a00;border:1px solid var(--neon)"></i>Salida registrada</span><span><i style="background:#2d4a00;border:1px dashed var(--neon);opacity:.5"></i>Salida silenciosa</span><span><i style="background:var(--card3)"></i>Julián (14/09/25)</span></div>
         </div>
+        <details class="more inline"><summary><span>Leer más</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><p><strong>El único fugitivo del chat:</strong> <strong>9 salidas voluntarias registradas</strong> (más 2 salidas silenciosas que WhatsApp ocultó a los no-administradores en mayo de 2023 y julio de 2024 cuando solo Antonio era admin) frente a <strong>0 salidas voluntarias</strong> del resto del grupo hasta que el propio Dani consiguió hacer salir a Julián en septiembre de 2025.</p></div></details>
       </article>
-      <article class="record" data-r style="--d:.15s">
-        <span class="rn">4</span>
-        <p><strong>La Hora Vampiro (<code>01:00 – 06:59 AM</code>):</strong> Entre las <strong>03:00 y las 06:59 de la madrugada</strong>, Daniel publicó <strong>416 mensajes</strong> frente a <strong>276 de los otros 7 miembros combinados</strong> (<strong>60,1% de todo el chat nocturno</strong>). Y en el tramo crítico de <strong>04:00 a 06:59</strong>, su cuota sube al <strong>79,7%</strong> (<code>249</code> suyos vs <code>63</code> del resto). Muchas de sus mayores explosiones (<em>"No quiero celebrar mi cumple"</em>, <em>"¿Habéis quedado sin mí?"</em>, <em>"Perra traidora"</em>, entrar a Minecraft a las 3 AM) arrancan cuando una persona funcional está en fase REM.</p>
+      <article class="record" data-r style="--d:0.15s">
+        <div class="rec-top"><span class="rec-v">79,7%</span><span class="rec-l">del chat de 04:00 a 06:59 es suyo</span></div>
+        <h5 class="rec-t">La Hora Vampiro (<code>01:00 – 06:59 AM</code>)</h5>
         <div class="viz clock" aria-hidden="true">
           <svg viewBox="0 0 140 140" id="vampClock"></svg>
           <div class="versus">
@@ -576,235 +650,21 @@
             <div class="vs-row other"><span>Resto</span><b>63</b><div class="tr"><div class="fl" data-w="20.3"></div></div></div>
           </div>
         </div>
+        <details class="more inline"><summary><span>Leer más</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><p><strong>La Hora Vampiro (<code>01:00 – 06:59 AM</code>):</strong> Entre las <strong>03:00 y las 06:59 de la madrugada</strong>, Daniel publicó <strong>416 mensajes</strong> frente a <strong>276 de los otros 7 miembros combinados</strong> (<strong>60,1% de todo el chat nocturno</strong>). Y en el tramo crítico de <strong>04:00 a 06:59</strong>, su cuota sube al <strong>79,7%</strong> (<code>249</code> suyos vs <code>63</code> del resto). Muchas de sus mayores explosiones (<em>"No quiero celebrar mi cumple"</em>, <em>"¿Habéis quedado sin mí?"</em>, <em>"Perra traidora"</em>, entrar a Minecraft a las 3 AM) arrancan cuando una persona funcional está en fase REM.</p></div></details>
       </article>
-      <article class="record" data-r style="--d:.2s">
-        <span class="rn">5</span>
-        <p><strong>Alérgico a las exclamaciones, adicto al interrogatorio:</strong> En <code>12.999</code> mensajes solo usó <strong>2 signos de exclamación</strong> (en mayo de 2022 aún ni los tocaba casi), pero disparó <strong>987 preguntas</strong> (<code>?</code>, <code>??</code>, <code>???????</code>), casi todas pasivo-agresivas (<code>"¿Y mañana?"</code>, <code>"¿En serio habéis quedado sin mí?"</code>, <code>"¿Me estás vacilando?"</code>).</p>
+      <article class="record" data-r style="--d:0.20s">
+        <div class="rec-top"><span class="rec-v">987</span><span class="rec-l">preguntas · solo 2 exclamaciones</span></div>
+        <h5 class="rec-t">Alérgico a las exclamaciones, adicto al interrogatorio</h5>
         <div class="viz" aria-hidden="true">
           <div class="marks"><div><div class="ex">!!</div><small>2</small></div><div><div class="qm">???</div><small>987</small></div></div>
           <div class="qrain" id="qrain"></div>
         </div>
+        <details class="more inline"><summary><span>Leer más</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><p><strong>Alérgico a las exclamaciones, adicto al interrogatorio:</strong> En <code>12.999</code> mensajes solo usó <strong>2 signos de exclamación</strong> (en mayo de 2022 aún ni los tocaba casi), pero disparó <strong>987 preguntas</strong> (<code>?</code>, <code>??</code>, <code>???????</code>), casi todas pasivo-agresivas (<code>"¿Y mañana?"</code>, <code>"¿En serio habéis quedado sin mí?"</code>, <code>"¿Me estás vacilando?"</code>).</p></div></details>
       </article>
     </div>
-  </div>
-</section>
 
-<div class="marquee rev" aria-hidden="true"><div class="mq-track"><span>El Prensas</span><span>Perchita</span><span>Perchi</span><span>El Perchas</span><span>El Reperchas</span><span>GM</span><span>GM²</span><span>Nini Supremo</span><span>Gigante Brunot</span><span>Pingüino</span><span>Yeti</span><span>Godbruno</span><span>El Prensas</span><span>Perchita</span><span>Perchi</span><span>El Perchas</span><span>El Reperchas</span><span>GM</span><span>GM²</span><span>Nini Supremo</span><span>Gigante Brunot</span><span>Pingüino</span><span>Yeti</span><span>Godbruno</span></div></div>
-
-<!-- ================= CAPÍTULO II ================= -->
-<section id="cap2">
-  <div class="wrap">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">II</div>
-      <div class="deco" aria-hidden="true"><svg viewBox="0 0 70 100" style=""><use href="#i-card"/></svg></div>
-      <div class="chapter-kicker">Capítulo II</div>
-      <h2 class="chapter-title">El Lore de <em>los Apodos</em><span class="sub">Genealogía de <code>El Prensas</code>, <code>Perchita</code> y <code>GM</code></span></h2>
-    </div>
-    <p class="lead narrow" style="padding:0" data-r>Ningún personaje mitológico de <em>El Puto Circo</em> acumuló tantos alias ni tanta mitología propia:</p>
-
-    <div class="gm-evolve" data-r aria-hidden="true"><span>El Prensas</span><i>→</i><span>Perchita</span><i>→</i><span>GM</span><i>→</i><span class="last">GM²</span></div>
-
-    <div class="evo">
-      <article class="evo-card" data-r>
-        <span class="lv">FORMA 1</span>
-        <div class="tag">El Prensas</div>
-        <p style="margin:0"><strong><code>El Prensas</code>:</strong> Es la etiqueta con la que Pablo lo guardó en la agenda desde antes del nacimiento del grupo (<code>Daniel Bruno (El Prensas)</code>). Aunque nunca se redacta la escena fundacional en texto, cuando Fernando pregunta directamente el <code>30/06/2025</code> (<code>"Porque el prensas?"</code>) tras un vídeo antiguo rescatado, Edu responde <code>"Hostia / Recuerdo desbloqueado"</code>, y en <code>17/12/2023</code> Julián ya bromeaba <em>"con la presa que hace ya se pone en forma"</em>, vinculándolo a su obsesión de gimnasio (<em>"el gym bro"</em>).</p>
-        <svg viewBox="0 0 120 50" style="width:110px;height:46px;position:absolute;right:14px;bottom:12px;opacity:.25" aria-hidden="true"><use href="#i-gym"/></svg>
-      </article>
-      <div class="evo-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></div>
-      <article class="evo-card" data-r style="--d:.08s">
-        <span class="lv">FORMA 2</span>
-        <div class="tag">Perchita</div>
-        <p style="margin:0"><strong><code>Perchita</code> / <code>Perchi</code> / <code>El Perchas</code> / <code>El Reperchas</code>:</strong> Apodo cotidiano acuñado principalmente por Alejandro (<code>Perchi</code> desde junio de 2022; <code>Perchita</code> en noviembre de 2022 jugando con un sticker: <em>"Cuando pongas un sticker de los tuyos Julián, Perchita se acercará... Perchita se aleja"</em>) y por Edu (<code>El Perchas</code>). Oscila entre el cariño de mascota del grupo y la burla cuando se pone dramático (<em>"Modo Perchita"</em>).</p>
-      </article>
-      <div class="evo-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></div>
-      <article class="evo-card wide" data-r>
-        <span class="lv">FORMA FINAL</span>
-        <div class="tag">GM → GM²</div>
-        <p><strong><code>GM</code> — La Mutación Definitiva (<code>Guarra Mayor</code> → <code>Gordo Mamón</code> → <code>Game Master</code> → <code>GM²</code>):</strong></p>
-        <ul class="phases">
-          <li data-r><strong>Fase 1 (Origen, <code>13/03/2024 15:59</code>):</strong> Eduardo le suelta <em>"Porque tú eres la Guarra Mayor / Puta Guarraaaaa"</em> y Dani responde teatralmente <em>"Noooooooooo / Cómo lo supiiiiissteeeeeee"</em>.</li>
-          <li data-r style="--d:.08s"><strong>Fase 2 (Abreviatura cifrada, <code>10/04/2024 11:51</code>):</strong> Pablo escribe <em>"Me jode darle la razón a GM"</em>. Dani sospecha al instante: <em>"Gordo mamón?"</em>, a lo que Pablo le vacila con <em>"Game master"</em>. Dos días después aparece en la lista oficial de motes para la feria: <code>1. El pajas · 2. El pechofrío · 3. Visualnovel máster · 4. GM</code>.</li>
-          <li data-r style="--d:.16s"><strong>Fase 3 (Canonización post-mortem, <code>23/09/2025 19:04</code>):</strong> Horas después de su expulsión definitiva, al entrar Pablo al servidor de Minecraft y encontrar la montaña aplanada por Dani, lo bautiza como <strong>"Yacimientos del hogar de un Gordus Mamonis Mamonis"</strong> y Julián sella la fórmula: <strong><code>GM²</code></strong>. A partir de ahí nacen <em>el Monumento al GM</em>, <em>el 100 GM</em> (100 Montaditos), <em>el Rap del GM</em> y <em>la carta de la rata gorda</em>.</li>
-        </ul>
-        <div class="art-row" aria-hidden="true">
-          <svg viewBox="0 0 100 100"><use href="#i-grass"/></svg>
-          <svg viewBox="0 0 100 70" style="height:56px"><use href="#i-monta"/></svg>
-          <svg viewBox="0 0 70 100"><use href="#i-card"/></svg>
-        </div>
-      </article>
-      <article class="evo-card wide" data-r>
-        <span class="lv">DLC</span>
-        <p style="margin:0"><strong>Otros apodos notables:</strong> <code>Nini Supremo</code> (Pablo lo tenía guardado como <code>"Nini"</code> en su agenda frente a <code>"Julian (Titulado)"</code> y <code>"Alejandro Manzano (Titulado)"</code> en 2023), <code>Gigante Brunot</code> / <code>Brunot</code> (por <em>Doraemon</em>), <code>Pingüino</code> (por el traje en las prácticas de El Corte Inglés), <code>Papa Noel</code> (Ale), <code>Yeti</code> (por no salir por encima de 40 °C), <code>Godbruno</code>, <code>Dani Tóxica</code> y <code>La Novia Tóxica del Grupo</code>.</p>
-        <div class="nick-cloud" aria-hidden="true">
-          <span class="nick" style="--i:1">Nini Supremo</span><span class="nick" style="--i:2">Gigante Brunot</span><span class="nick" style="--i:3">Brunot</span><span class="nick" style="--i:4">🐧 Pingüino</span><span class="nick" style="--i:5">🎅 Papa Noel</span><span class="nick" style="--i:6">❄️ Yeti</span><span class="nick" style="--i:7">Godbruno</span><span class="nick" style="--i:8">Dani Tóxica</span><span class="nick" style="--i:9">La Novia Tóxica del Grupo</span>
-        </div>
-        <svg viewBox="0 0 80 100" style="width:60px;height:76px;position:absolute;right:14px;top:12px;opacity:.5" aria-hidden="true"><use href="#i-peng"/></svg>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CAPÍTULO III ================= -->
-<section id="cap3">
-  <div class="wrap">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">III</div>
-      <div class="deco" aria-hidden="true"><svg viewBox="0 0 96 110" style=""><use href="#i-radler"/></svg></div>
-      <div class="chapter-kicker">Capítulo III</div>
-      <h2 class="chapter-title">Autopsia <em>Lingüística</em><span class="sub">Cómo Habla, Escribe y Escupe Veneno</span></h2>
-    </div>
-    <p class="lead narrow" style="padding:0" data-r>Si un lingüista forense encontrara un fragmento anónimo de <em>El Puto Circo</em>, tardaría <strong>0,4 segundos</strong> en identificar a Daniel Bruno gracias a cuatro huellas dactilares inconfundibles:</p>
-
-    <h3 class="sec" data-r><span class="n">3.1</span>El Boicot Ortográfico a las Letras <code>u-e</code></h3>
-    <div class="split-2">
-      <div>
-        <div class="que-demo" data-r aria-hidden="true"><span class="q">q</span><span class="ue"><span>u</span><span>e</span></span></div>
-        <div class="ratio-grid" aria-hidden="true">
-          <div class="ratio" data-r><div class="w">q / que</div><div class="nums"><span>Dani <b>1.733</b>/<b>41</b></span></div><div class="split"><i data-w="97.7"></i></div><div class="nums"><span>97,7% q</span></div></div>
-          <div class="ratio" data-r style="--d:.05s"><div class="w">porq / porque</div><div class="nums"><span>Dani <b>164</b> vs <b>0</b></span></div><div class="split"><i data-w="99.4"></i></div><div class="nums"><span>porque: 1 vs 585</span></div></div>
-          <div class="ratio" data-r style="--d:.1s"><div class="w">aro (claro)</div><div class="nums"><span><b>83</b> veces</span></div><div class="split"><i data-w="75.9"></i></div><div class="nums"><span>63 solo</span></div></div>
-          <div class="ratio" data-r style="--d:.15s"><div class="w">pos (pues)</div><div class="nums"><span><b>73</b> vs <b>15</b></span></div><div class="split"><i data-w="83"></i></div><div class="nums"><span>baso 🥛</span></div></div>
-        </div>
-      </div>
-      <p data-r>Daniel mantiene una guerra personal contra el dígrafo <code>que</code>. De cada 100 veces que necesita escribir esa palabra, <strong>97,7 veces escribe <code>q</code></strong> (<code>1.733</code> veces <code>q</code> frente a solo <code>41</code> <code>que</code>), mientras que el resto del grupo escribe <code>que</code> el <strong>99,6%</strong> de las veces (<code>8.936</code> <code>que</code> vs <code>40</code> <code>q</code>). Lo mismo ocurre con <strong><code>porq</code> (<code>164</code> vs <code>0</code>)</strong>, <strong><code>por q</code> (<code>28</code> vs <code>0</code>)</strong> frente a <code>porque</code> (<code>1</code> vs <code>585</code>), y <strong><code>aunq</code> (<code>15</code> vs <code>2</code>)</strong> frente a <code>aunque</code> (<code>0</code> vs <code>188</code>). Además, practica una fonética andaluza selectiva donde <code>"claro"</code> siempre muta en <strong><code>"aro"</code></strong> (<code>83</code> veces, <code>63</code> como mensaje único) y <code>"pues"</code> en <strong><code>"pos"</code></strong> (<code>73</code> vs <code>15</code>), aunque de vez en cuando defienda usar un <strong><code>"baso"</code></strong> normal en casa de Ale.</p>
-    </div>
-
-    <h3 class="sec" data-r><span class="n">3.2</span>El Diccionario Perchita: Frecuencias Reales vs. Resto del Grupo</h3>
-    <div class="panel" data-r>
-      <p class="panel-title">▮ Diccionario Perchita</p>
-      <p class="panel-sub">Ratio Dani vs. Grupo (escala logarítmica). Toca una palabra para ver su ficha.</p>
-      <div class="vocab-chart" id="vocabChart"></div>
-      <div class="vocab-detail" id="vocabDetail" aria-live="polite"></div>
-    </div>
-
-    <div class="dict" id="dict">
-      <article class="dict-entry" data-r data-word="q" data-ratio="138.6"><h5><span><strong><code>q</code></strong> <em>(vs <code>que</code>)</em></span><span class="ratio-b">138,6x</span></h5><p class="fn">Ahorro de energía vital entre ráfaga y ráfaga</p><div class="row"><span>Usos de Dani: <b>1.733</b></span><span>Tasa Dani (/1k msgs): <b>151,04</b></span><span>Usos Resto Grupo: <b>40</b></span><span>Ratio: <b>138,6x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="porq / por q" data-ratio="inf"><h5><span><strong><code>porq</code> / <code>por q</code></strong></span><span class="ratio-b">∞ (Exclusiva)</span></h5><p class="fn">Justificación defensiva instantánea</p><div class="row"><span>Usos de Dani: <b>192</b></span><span>Tasa Dani (/1k msgs): <b>16,73</b></span><span>Usos Resto Grupo: <b>0</b></span><span>Ratio: <b>∞ (Exclusiva)</b></span></div></article>
-      <article class="dict-entry" data-r data-word="chavales" data-ratio="14.2"><h5><span><strong><code>chavales</code></strong></span><span class="ratio-b">14,2x</span></h5><p class="fn">Llamada a filas antes de proponer plan o quejarse</p><div class="row"><span>Usos de Dani: <b>359</b> <em>(317 solo)</em></span><span>Tasa Dani (/1k msgs): <b>31,29</b></span><span>Usos Resto Grupo: <b>81</b></span><span>Ratio: <b>14,2x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="xd / xdddddd..." data-ratio="3.2"><h5><span><strong><code>xd</code> / <code>xdddddd...</code></strong></span><span class="ratio-b">3,2x</span></h5><p class="fn">Risa pasivo-agresiva; la longitud de <code>d</code> mide el nivel de picor</p><div class="row"><span>Usos de Dani: <b>576</b></span><span>Tasa Dani (/1k msgs): <b>50,20</b></span><span>Usos Resto Grupo: <b>581</b></span><span>Ratio: <b>3,2x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="Ataques oro-genitales*" data-ratio="3.5"><h5><span><strong>Ataques oro-genitales*</strong></span><span class="ratio-b">3,5x</span></h5><p class="fn">Cierre de debate cuando se queda sin argumentos (<code>chúpala</code>, <code>cómeme un huevo/cipote/ojete</code>)</p><div class="row"><span>Usos de Dani: <b>216</b></span><span>Tasa Dani (/1k msgs): <b>18,82</b></span><span>Usos Resto Grupo: <b>200</b></span><span>Ratio: <b>3,5x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="chupala" data-ratio="16.7"><h5><span><strong><code>chupala</code></strong></span><span class="ratio-b">16,7x</span></h5><p class="fn">Respuesta automática universal a cualquier réplica</p><div class="row"><span>Usos de Dani: <b>88</b> <em>(63 solo)</em></span><span>Tasa Dani (/1k msgs): <b>7,67</b></span><span>Usos Resto Grupo: <b>17</b></span><span>Ratio: <b>16,7x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="aro" data-ratio="5.9"><h5><span><strong><code>aro</code></strong> <em>(por <code>claro</code>)</em></span><span class="ratio-b">5,9x</span></h5><p class="fn">Sarcasmo seco o confirmación condescendiente</p><div class="row"><span>Usos de Dani: <b>83</b> <em>(63 solo)</em></span><span>Tasa Dani (/1k msgs): <b>7,23</b></span><span>Usos Resto Grupo: <b>45</b></span><span>Ratio: <b>5,9x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="terrible" data-ratio="12.6"><h5><span><strong><code>terrible</code></strong></span><span class="ratio-b">12,6x</span></h5><p class="fn">Sentencia dramática sobre cualquier contratiempo menor</p><div class="row"><span>Usos de Dani: <b>62</b> <em>(41 solo)</em></span><span>Tasa Dani (/1k msgs): <b>5,40</b></span><span>Usos Resto Grupo: <b>16</b></span><span>Ratio: <b>12,6x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="mentira" data-ratio="4.2"><h5><span><strong><code>mentira</code></strong></span><span class="ratio-b">4,2x</span></h5><p class="fn">Negar capturas, horarios o recuerdos ajenos sin aportar pruebas</p><div class="row"><span>Usos de Dani: <b>39</b> <em>(26 solo)</em></span><span>Tasa Dani (/1k msgs): <b>3,40</b></span><span>Usos Resto Grupo: <b>30</b></span><span>Ratio: <b>4,2x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="discrepo" data-ratio="45.4"><h5><span><strong><code>discrepo</code></strong></span><span class="ratio-b">45,4x</span></h5><p class="fn">Escudo pseudo-culto justo antes de soltar una barbaridad</p><div class="row"><span>Usos de Dani: <b>26</b> <em>(22 solo)</em></span><span>Tasa Dani (/1k msgs): <b>2,27</b></span><span>Usos Resto Grupo: <b>2</b></span><span>Ratio: <b>45,4x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="evidentemente" data-ratio="24.0"><h5><span><strong><code>evidentemente</code></strong></span><span class="ratio-b">24,0x</span></h5><p class="fn">Presentar su opinión subjetiva como axioma físico indiscutible</p><div class="row"><span>Usos de Dani: <b>22</b></span><span>Tasa Dani (/1k msgs): <b>1,92</b></span><span>Usos Resto Grupo: <b>3</b></span><span>Ratio: <b>24,0x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="subnormal" data-ratio="3.3"><h5><span><strong><code>subnormal</code></strong></span><span class="ratio-b">3,3x</span></h5><p class="fn">Comodín insultante favorito (Edu: <em>"Tiene dos frases y una es decir subnormal"</em>)</p><div class="row"><span>Usos de Dani: <b>28</b></span><span>Tasa Dani (/1k msgs): <b>2,44</b></span><span>Usos Resto Grupo: <b>27</b></span><span>Ratio: <b>3,3x</b></span></div></article>
-      <article class="dict-entry" data-r data-word="ameisin" data-ratio="48.2"><h5><span><strong><code>ameisin</code></strong></span><span class="ratio-b">48,2x</span></h5><p class="fn">Ironía bilingüe deformada cuando algo le parece lamentable</p><div class="row"><span>Usos de Dani: <b>15</b></span><span>Tasa Dani (/1k msgs): <b>1,31</b></span><span>Usos Resto Grupo: <b>1</b></span><span>Ratio: <b>48,2x</b></span></div></article>
-    </div>
-    <p class="footnote narrow" style="padding:0" data-r><em>*Incluye <code>chúpala</code>, <code>cómeme un huevo/los huevos/la polla/el cipote/el ojete</code>, <code>lámeme las bolas</code>, <code>me comes un nabo</code> y variantes.</em></p>
-
-    <h3 class="sec" data-r><span class="n">3.3</span>Los Dos Registros de Daniel Bruno (y el Problema del Sarcasmo Plano)</h3>
-    <p class="narrow" style="padding:0" data-r>Daniel oscila bruscamente entre dos personajes incompatibles:</p>
-    <div class="flip" id="flipCard" data-r role="button" tabindex="0" aria-label="Girar tarjeta: Caballero de Debate / Sicario de Barrio">
-      <div class="flip-inner">
-        <div class="flip-face flip-front">
-          <svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-gavel"/></svg>
-          <div class="role">El Caballero de Debate</div>
-          <p><strong>El Caballero de Debate (<code>discrepo</code>, <code>evidentemente</code>, <code>efectivamente</code>, <code>literalmente</code>, <code>pa empezar</code>):</strong> Cuando quiere parecer superior en debates sobre economía (<em>"solo con usar la lógica te das cuenta de q el 90% de los impuestos sobran"</em>), moral (<em>"una mujer es más q un coño, Ale madura"</em>) o justicia (<em>"mi opinión es 100% objetiva"</em>), adopta un tono solemne de tertuliano.</p>
-          <div class="hint"><svg viewBox="0 0 24 24"><use href="#i-flip"/></svg>Toca: en 30 segundos…</div>
-        </div>
-        <div class="flip-face flip-back">
-          <svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-target"/></svg>
-          <div class="role">El Sicario de Barrio</div>
-          <p><strong>El Sicario de Barrio (<code>puta</code>, <code>perra</code>, <code>zorra castrada</code>, <code>cómase un huevo</code>, <code>te parto la puta cara</code>):</strong> En cuanto alguien le lleva la contraria con un dato o un meme, el tertuliano desaparece en 30 segundos y da paso al insulto rápido, la amenaza física o el <em>"Q si Pablo q si"</em> (<code>30</code> veces usado como cierre despectivo).</p>
-          <div class="hint"><svg viewBox="0 0 24 24"><use href="#i-flip"/></svg>Toca para volver al tertuliano</div>
-        </div>
-      </div>
-    </div>
-    <div class="narrow" style="padding:0">
-      <div class="chat" data-r>
-        <div class="bubble first" style="--who:#ffc93d"><span class="who">Pablo Valderas · 17/04/2025</span>Si suena siempre igual<span class="meta"></span></div>
-        <div class="bubble">No sé le ha pillado nunca el sarcasmo</div>
-        <div class="bubble out first">Era todo ironía, subnormal<span class="meta">10/02/2025</span></div>
-      </div>
-      <p data-r><strong>El Enigma del Sarcasmo:</strong> Como resumió Pablo el <code>17/04/2025</code> (<code>"Si suena siempre igual / No sé le ha pillado nunca el sarcasmo"</code>), Daniel dice exactamente con las mismas palabras y la misma ausencia de emojis tanto sus bromas como sus cabreos reales —y, cuando le pillan pasándose de la raya (como el <code>10/02/2025</code> con el senderismo), saca el comodín de <em>"Era todo ironía, subnormal"</em>.</p>
-    </div>
-  </div>
-</section>
-
-<div class="marquee alt" aria-hidden="true"><div class="mq-track"><span>Yo no olvido</span><span>Os la guardo</span><span>Perdonar es de gente patética</span><span>Me habéis fallado</span><span>Modo Perchita</span><span>Yo no olvido</span><span>Os la guardo</span><span>Perdonar es de gente patética</span><span>Me habéis fallado</span><span>Modo Perchita</span></div></div>
-
-<!-- ================= CAPÍTULO IV ================= -->
-<section id="cap4">
-  <div class="wrap">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">IV</div>
-      <div class="deco" aria-hidden="true"><svg viewBox="0 0 100 100" style=""><use href="#i-nuke"/></svg></div>
-      <div class="chapter-kicker">Capítulo IV</div>
-      <h2 class="chapter-title">Anatomía <em>Psicológica</em><span class="sub">Los 8 Patrones Repetitivos del <em>Ciclo Perchita</em></span></h2>
-    </div>
-    <p class="lead narrow" style="padding:0" data-r>¿Se repiten patrones en los 144 conflictos? <strong>No es que se repitan: Daniel Bruno vive atrapado en un bucle temporal tan predecible que el propio grupo lo llamó <em>"Steins;Gate"</em> y <em>"un ciclo sin fin"</em></strong>. De hecho, cuando Pablo le pasó el chat a ChatGPT en marzo de 2025, la IA recreó al instante su personalidad exacta: quedarse sin plan, amenazar al grupo, llamar cobarde a quien no viene y gritar <em>"¡ME HABÉIS FALLADO!"</em>.</p>
-
-    <div class="cycle-wrap" data-r>
-      <div class="cycle" id="cycle">
-        <svg viewBox="0 0 520 520" id="cycleSvg" aria-hidden="true"></svg>
-        <div class="cycle-center"><div><div class="cc-n" id="ccN">1</div><div class="cc-t" id="ccT"></div><div class="cc-b" id="ccB"></div></div></div>
-      </div>
-      <ol class="cycle-list" id="cycleList">
-        <li data-k="A"><b>1</b><span>1. Propone plan vago o exige hora/sitio fijo (rocódromo)</span></li>
-        <li data-k="B"><b>2</b><span>2. El grupo no responde al instante o propone alternativa (caminar/cine VOSE/dinero)</span></li>
-        <li data-k="C"><b>3</b><span>3. Escala rápido: 'sois unos mierdas', 'simps', 'no me hacéis caso'</span></li>
-        <li data-k="D"><b>4</b><span>4. Abre el Cajón de Mierda (2014, Primaria, parejas, fotos)</span></li>
-        <li data-k="E"><b>5</b><span>5. ¿Alguien le lleva la contraria con pruebas?</span><span class="arr">Sí ↓</span></li>
-        <li data-k="F"><b>✗</b><span>Niega la realidad ('mentira'), exige perdón en séquito o pulsa Botón Nuclear</span></li>
-        <li data-k="G"><b>6</b><span>6. Salida del grupo / Bloqueos / Renombres ('El Circo', 'Pablo la chupa')</span></li>
-        <li data-k="H"><b>7</b><span>7. Pasan días o meses -&gt; Pide volver por privado a Tony/Julián</span></li>
-        <li data-k="I"><b>8</b><span>8. Regresa insultando ('Putas / Zorras / Subnormales') y reinicia el ciclo</span><span class="arr">↻ 1</span></li>
-      </ol>
-    </div>
-
-    <h3 class="sec" data-r><span class="n">IV</span>Los 8 Patrones Inmutables Documentados en los Logs:</h3>
-    <div class="patterns">
-      <details class="pat" data-r open>
-        <summary><span class="ic"><svg viewBox="0 0 100 80"><use href="#i-hold"/></svg></span><b><small>PATRÓN 01</small>La Alergia Estructural a Caminar, a las Cuestas y al Calor ("El Yeti del Rocódromo"):</b><span class="pm"></span></summary>
-        <div class="body"><p>Desde junio de 2022 hasta 2025 exige quedar en el <strong>rocódromo</strong> en lugar del parque por no subir una cuesta corta (<code>INC-032</code>, <code>INC-047</code>), se niega a caminar de Nervión al Centro (<code>INC-035</code>) o a hacer senderismo (<code>INC-045</code>, <code>INC-119</code>), rechaza ponerse traje para la graduación de un amigo (<code>INC-091</code>) y exige el <strong>asiento de copiloto</strong> alegando mareo aunque luego la líe con la radio (<code>INC-056</code>, <code>INC-135</code>).</p></div>
-      </details>
-      <details class="pat" data-r>
-        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-chats"/></svg></span><b><small>PATRÓN 02</small>La Paradoja del "Otro Grupo":</b><span class="pm"></span></summary>
-        <div class="body"><p>El <code>21/05/2022</code> él mismo se negó a estar en el grupo original de quedadas (<code>"Pues yo en el otro no voy a estar"</code>). Acto seguido, durante más de tres años montó en cólera cada vez que los demás cerraban un plan allí o por privado (<code>INC-003</code>, <code>INC-011</code>, <code>INC-014</code>, <code>INC-036</code>, <code>INC-100</code>).</p></div>
-      </details>
-      <details class="pat" data-r>
-        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-box"/></svg></span><b><small>PATRÓN 03</small>El Cajón de Mierda Decenal (<code>"Yo no olvido, os la guardo"</code>):</b><span class="pm"></span></summary>
-        <div class="body"><p>Incapaz de cerrar una discusión sobre algo ocurrido hoy (el chopped, el spoiler de <em>Shingeki</em>, llegar tarde o un mod de Minecraft), saca agravios de <strong>hace más de 10 años</strong>: el partido de la ESO en que Pablo dijo <em>"Shuuuuu está ligando"</em> delante de una chica, el juego infantil de <em>"huir de Daniel Bruno"</em> en 1º de primaria o el viejo lío de Julián y Paola. Como confesó el <code>09/11/2023</code>: <em>"Yo no olvidó / Cada putada q me habéis hecho / Os la guardo / No tenéis derecho de reprocharme una mierda"</em>.</p></div>
-      </details>
-      <details class="pat" data-r>
-        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-glass"/></svg></span><b><small>PATRÓN 04</small>La Asimetría del Cristal (<code>Ley Bruno</code> vs. Impunidad Propia):</b><span class="pm"></span></summary>
-        <div class="body"><p>Exige tolerancia cero cuando hacen una caricatura suya (<code>INC-046</code>), editan su foto en un montaje (<code>INC-077</code> <em>"te parto la puta cara"</em>) o lo ponen de protagonista en historias de IA (<code>INC-126</code>, <code>INC-130</code>). Sin embargo: (a) grabó a Pablo borracho y lo dejó en destacadas de Instagram ignorando cuando Pablo le pidió amablemente quitarlo, (b) usó fotos de los demás para stickers sin remordimientos, (c) se comió la medicación (chopped) del perro operado de Ale culpando a Edu y sin pedir perdón, y (d) soltó el spoiler final de <em>Attack on Titan</em> rematando con <em>"Te jodes / Por perro"</em>.</p></div>
-      </details>
-      <details class="pat" data-r>
-        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-radar"/></svg></span><b><small>PATRÓN 05</small>El Radar Anti-Simps (Hostilidad Crónica hacia Novias Ajenas):</b><span class="pm"></span></summary>
-        <div class="body"><p>Si Julián o Pablo tienen pareja (<strong>Ana</strong> o <strong>Raquel / "la diabla"</strong>) o incluso planes laborales/familiares (como ver a sus abuelos en Domingo de Resurrección, <code>INC-129</code>), Daniel interpreta cualquier negativa como traición y "simpeo" (<code>44</code> usos de <code>simp*</code>). Con Julián y Ana llegó a convertir un pique privado por el grupo familiar de Steam en insultos directos hacia ella (<code>"puta"</code>, <code>"zorra castrada"</code>) que detonaron la salida de Julián el <code>14/09/2025</code> y su propia expulsión el <code>23/09/2025</code>.</p></div>
-      </details>
-      <details class="pat" data-r>
-        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-trap"/></svg></span><b><small>PATRÓN 06</small>La "Estrategia Trampa" y el Horror a Pedir Perdón:</b><span class="pm"></span></summary>
-        <div class="body"><p>Como diagnosticó Ale el <code>09/11/2023</code> (<code>"Parece que te cuesta mucho decir perdón cuando la cagas en algo"</code>) y remató Julián (<code>"estrategia trampa"</code>), Daniel literalmente declaró <code>"Perdonar es de gente patética"</code> (<code>30/04/2023</code>). Cuando se equivoca —desde comerse el chopped del perro hasta atacar a Pablo sin escuchar su audio (<code>18/05/2024</code>) o llamar puta a Ana (<code>14/09/2025</code>)— o bien exige que <strong>todos vayan primero en séquito a pedirle perdón en persona</strong> antes de dignarse a decir por qué tendría que disculparse él, o rompe los tratados de paz minutos después justificando que <em>"nadie cumple su palabra"</em>.</p></div>
-      </details>
-      <details class="pat" data-r>
-        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-nuke"/></svg></span><b><small>PATRÓN 07</small>El Botón Nuclear y los Bloqueos Selectivos:</b><span class="pm"></span></summary>
-        <div class="body"><p>Cuando se siente acorralado, dispara la secuencia completa: abandona el grupo (11 veces en total), bloquea en WhatsApp/Steam/Pokémon TCG Pocket, borra contactos de la agenda (teniendo luego que pedir por privado a Antonio que lo meta otra vez) y, como descubrieron sus amigos tras el ban definitivo de 2025, <strong>mantiene sin bloquear únicamente a perfiles femeninos o cuentas secundarias</strong> (<code>"Lo que le interesa al listo"</code>, sentenció Fernando).</p></div>
-      </details>
-      <details class="pat" data-r>
-        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-target"/></svg></span><b><small>PATRÓN 08</small>Disparar Antes de Leer (y Negar la Prueba que Él Mismo Pidió):</b><span class="pm"></span></summary>
-        <div class="body"><p>Ataca por no saber la dirección del Hot Pot, por la hora del Telepizza que estaba escrita 3 días antes, por no oír un audio de Pablo, por una IP de Minecraft enviada hora y media antes o por una mención donde tampoco estaban otros dos miembros. Y en el caso cumbre del <code>30/04/2023</code>, retó a Julián a preguntar a las amigas del viaje (<code>"No hay huevos"</code>) y, cuando Julián trajo la captura confirmando que había sido molesto (<code>"castrante hasta para gente que has visto un día"</code>), la descartó sin pruebas como un montaje.</p></div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CAPÍTULO V ================= -->
-<section id="cap5">
-  <div class="wrap">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">V</div>
-      <div class="deco" aria-hidden="true"><svg viewBox="0 0 120 120" style=""><use href="#i-hd"/></svg></div>
-      <div class="chapter-kicker">Capítulo V</div>
-      <h2 class="chapter-title">Auditoría de la Razón <em>y Mapa de Rivalidades</em></h2>
-    </div>
-
-    <h3 class="sec" data-r><span class="n">5.1</span>¿Llevaba Razón Daniel Bruno? El Desplome del 9,7%</h3>
-    <div class="gauge-wrap">
+    <h3 class="sec" id="s-razon" data-r><span class="n">5.1</span>¿Llevaba Razón Daniel Bruno? El Desplome del 9,7%</h3>
+<div class="gauge-wrap">
       <div class="gauge" data-r id="gauge">
         <svg viewBox="0 0 240 240" aria-hidden="true">
           <circle class="bg" cx="120" cy="120" r="96"/>
@@ -826,8 +686,7 @@
         </div>
       </div>
     </div>
-
-    <div class="split-2">
+<div class="split-2">
       <div class="panel" data-r>
         <p class="panel-title">▮ Veredictos por año</p>
         <p class="panel-sub">🟢 Sí · 🟡 Parcialmente · 🔴 No</p>
@@ -839,8 +698,7 @@
         <div class="cats" id="catBars"></div>
       </div>
     </div>
-
-    <div class="tbl-wrap" data-r>
+<details class="more" data-r><summary><span>Ver tabla por años</span><span class="pm" aria-hidden="true"></span></summary><div class="tbl-wrap">
       <table class="rt compact">
         <thead><tr><th>Año</th><th>Incidentes</th><th>🟢 Llevaba Razón (<code>Sí</code>)</th><th>🟡 <code>Parcialmente</code></th><th>🔴 Sin Razón (<code>No</code>)</th><th>Lectura Evolutiva</th></tr></thead>
         <tbody>
@@ -851,8 +709,7 @@
           <tr class="total"><td class="head" data-l="Año"><strong>TOTAL</strong></td><td data-l="Incidentes"><strong>144</strong></td><td data-l="🟢 Sí"><strong>14 (9,7%)</strong></td><td data-l="🟡 Parcialmente"><strong>69 (47,9%)</strong></td><td data-l="🔴 No"><strong>61 (42,4%)</strong></td><td class="wide" data-l="Lectura Evolutiva"><strong>En el 90,3% de sus broncas o no tenía razón o destruyó sus propias formas</strong></td></tr>
         </tbody>
       </table>
-    </div>
-
+    </div></details>
     <h4 class="sub" data-r>🏆 Los 14 Incidentes donde SÍ Llevaba Razón (El Salón de la Justicia Perdida):</h4>
     <div class="trophies">
       <a class="trophy" href="#INC-008" data-inc="INC-008" data-r><svg class="cup" viewBox="0 0 100 100"><use href="#i-cup"/></svg><div><span class="num">1.</span><p><code>INC-008</code> (<code>10/06/2022</code>): Probar <em>Genshin Impact</em> y decir que es malo no te hace hipócrita (hasta Ale le respaldó).</p></div></a>
@@ -870,15 +727,25 @@
       <a class="trophy" href="#INC-111" data-inc="INC-111" data-r><svg class="cup" viewBox="0 0 100 100"><use href="#i-cup"/></svg><div><span class="num">13.</span><p><code>INC-111</code> (<code>14/01/2025</code>): Su teorema irrefutable de que el grupo siempre llega tarde y tocaba reservar.</p></div></a>
       <a class="trophy" href="#INC-123" data-inc="INC-123" data-r><svg class="cup" viewBox="0 0 100 100"><use href="#i-cup"/></svg><div><span class="num">14.</span><p><code>INC-123</code> (<code>07/03/2025</code>): Que Rubén le meta prisa por teléfono y luego Edu y el grupo le dejen plantado <strong>hora y media bajo la lluvia</strong>.</p></div></a>
     </div>
+  </div>
+</section>
 
-    <h3 class="sec" data-r><span class="n">5.2</span>¿Cuánto Se Pelea con Cada Integrante del Grupo?</h3>
+<!-- ======================================================
+     RIVALES
+     ====================================================== -->
+<section class="view" data-view="rivales" id="v-rivales" hidden>
+  <div class="wrap">
+    <div class="view-head">
+      <span class="view-kicker">Capítulo V · 5.2</span>
+      <h2>¿Cuánto Se Pelea con Cada Integrante del Grupo?</h2>
+      <p>Toca un nombre del mapa para ir a su ficha, o abre sus incidentes.</p>
+    </div>
     <div class="panel" data-r>
       <p class="panel-title">▮ Mapa de Rivalidades</p>
-      <p class="panel-sub">Grosor de la línea = incidentes en los que está implicado. Toca un nombre para ver su ficha.</p>
+      <p class="panel-sub">Grosor de la línea = incidentes en los que está implicado · tamaño del círculo = veces como rival principal.</p>
       <svg class="rival-net" id="rivalNet" viewBox="0 0 560 460" aria-hidden="true"></svg>
     </div>
-
-    <div class="rivals" id="rivals">
+<div class="rivals" id="rivals">
       <article class="rival" id="r-pablo" data-r data-key="Pablo" data-main="66" data-inv="114" data-pct="79.2" data-hos="342" data-men="274" data-color="#ff3d5a">
         <div class="rival-top"><div class="avatar" style="background:#ff3d5a">P</div><h5><strong>Pablo Valderas</strong><small>El Némesis Absoluto.</small></h5></div>
         <div class="hp">
@@ -953,168 +820,207 @@
   </div>
 </section>
 
-<div class="marquee" aria-hidden="true"><div class="mq-track"><span>Slendytruco</span><span>Ley Bruno</span><span>Capturas de Irene</span><span>Chopped de Messi</span><span>Reno Montaje</span><span>Guerra del Simp</span><span>Bonsái Kaede</span><span>Mochilas</span><span>Al carajo</span><span>Slendytruco</span><span>Ley Bruno</span><span>Capturas de Irene</span><span>Chopped de Messi</span><span>Reno Montaje</span><span>Guerra del Simp</span><span>Bonsái Kaede</span><span>Mochilas</span><span>Al carajo</span></div></div>
-
-<!-- ================= CAPÍTULO VI ================= -->
-<section id="cap6">
+<!-- ======================================================
+     EL GM
+     ====================================================== -->
+<section class="view" data-view="gm" id="v-gm" hidden>
   <div class="wrap">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">VI</div>
-      <div class="deco" aria-hidden="true"><svg viewBox="0 0 120 100" style=""><use href="#i-smite"/></svg></div>
-      <div class="chapter-kicker">Capítulo VI</div>
-      <h2 class="chapter-title">Crónica de los <em>Grandes Hitos</em><span class="sub">y Catálogo Completo de los 144 Incidentes</span></h2>
+    <div class="view-head">
+      <span class="view-kicker">Capítulos II, III y IV</span>
+      <h2>Ficha del personaje: el GM</h2>
+      <p>Lo que le gusta, cómo le llaman, cómo habla y el bucle del que no sale.</p>
+    </div>
+    <nav class="subnav" aria-label="En esta sección">
+      <a href="#g-gustos" data-jump>Gustos</a><a href="#g-apodos" data-jump>Apodos</a><a href="#g-lengua" data-jump>Cómo habla</a><a href="#g-ciclo" data-jump>El Ciclo</a><a href="#g-patrones" data-jump>8 patrones</a>
+    </nav>
+
+    <h3 class="sec" id="g-gustos" data-r><span class="n">♥</span>Inventario del GM</h3>
+    <div class="inventory">
+      <button class="inv" data-search="Helldivers" data-r><img src="assets/img/helldivers.webp" alt="Helldivers 2"><b>Helldivers 2</b><span>"Helldivers o me acuesto". Le regalaron la Edición Coleccionista… y dijo que las skins "dan sida".</span><em>Ver incidentes →</em></button>
+      <button class="inv" data-search="Smite" data-r style="--d:.05s"><img src="assets/img/smite.webp" alt="Smite"><b>Smite</b><span>Rechaza Smite diciendo que da asco… siendo Diamante 1.</span><em>Ver incidentes →</em></button>
+      <button class="inv" data-search="Minecraft" data-r style="--d:.1s"><img src="assets/img/mochila.webp" alt="Mochila de Minecraft"><b>Minecraft</b><span>El mod de las mochilas, la montaña aplanada a las 3 AM y el destierro.</span><em>Ver incidentes →</em></button>
+      <button class="inv can-inv" data-search="" data-r style="--d:.15s"><img src="assets/img/monster.webp" alt="Monster Energy"><b>Monster</b><span>Combustible oficial de la Hora Vampiro (03:00–06:59). Toca para abrir una.</span><em>Tsssk →</em></button>
+      <button class="inv" data-search="radler" data-r style="--d:.2s"><img src="assets/img/radler.webp" alt="Radler"><b>Radler</b><span>El Expediente Radler: quién compró radler en Halloween 2021.</span><em>Ver incidentes →</em></button>
+      <button class="inv" data-search="rocódromo" data-r style="--d:.25s"><svg viewBox="0 0 100 80"><use href="#i-hold"/></svg><b>Rocódromo</b><span>"El Yeti del Rocódromo": antes muerto que subir la cuesta del parque.</span><em>Ver incidentes →</em></button>
     </div>
 
-    <h3 class="sec" data-r><span class="n">7</span>Los 7 Grandes Episodios del <em>Daniverso</em> (Narración Forense)</h3>
-    <div class="episodes" id="episodes">
-      <div class="line-fill" id="epLine"></div>
-      <article class="episode" data-r>
-        <div class="ep-card">
-          <svg class="ep-art" viewBox="0 0 100 80" aria-hidden="true"><use href="#i-crown"/></svg>
-          <div class="ep-num">EPISODIO 01</div>
-          <h4>El Golpe de Estado del <em>Slendytruco</em></h4>
-          <div class="ep-date"><code>13–18/11/2022</code> <code>INC-028</code> a <code>INC-030</code></div>
-          <p>Tras salir del grupo por ser el único sin admin (<code>"Menos lloros"</code>), Pablo le readmite y le devuelve el admin el <code>13/11</code> a las <code>21:52</code>. A las <code>22:01</code> Dani destituye a Pablo (<code>"Aprovechando bien el slendytruco"</code>). Horas después, cuando Ale hace una broma sobre Elena, Dani saca el arma nuclear de Paola y Julián y <strong>expulsa a Ale y a Pablo</strong> (<code>"Al exilio los dos por gilipollas"</code>). Cinco días más tarde, tras otra guerra de POV, borrado de stickers y nueva salida con auto-reingreso por enlace (<code>"Vuelvo a ser poderoso"</code>), Pablo cede el admin único a Antonio declarando la anarquía.</p>
-        </div>
-      </article>
-      <article class="episode" data-r>
-        <div class="ep-card">
-          <svg class="ep-art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-gavel"/></svg>
-          <div class="ep-num">EPISODIO 02</div>
-          <h4>La Crisis de Marzo y la <em>Ley Bruno</em></h4>
-          <div class="ep-date"><code>27/02–17/03/2023</code> <code>INC-046</code></div>
-          <p>Tras una guerra de iconos con Thanos waifu, Dani desaparece <strong>16 días</strong>, bloquea a todo el mundo (incluidos inocentes como Antonio y Ana, dejando solo a Elena) y borra sus contactos por una caricatura subida por Ale. Vuelve el <code>15/03</code>, Pablo lo recibe renombrando el chat <code>"Nini supremo"</code> y Pablo le expone públicamente su hipocresía: Dani grabó a Pablo borracho y lo subió sin permiso sudando de quitarlo. Edu consagra en broma la <code>"Ley Bruno"</code>.</p>
-        </div>
-      </article>
-      <article class="episode" data-r>
-        <div class="ep-card">
-          <svg class="ep-art" viewBox="0 0 70 110" aria-hidden="true"><use href="#i-phone"/></svg>
-          <div class="ep-num">EPISODIO 03</div>
-          <h4>La Macrodiscusión de Abril: 774 Mensajes y las Capturas de Irene</h4>
-          <div class="ep-date"><code>30/04/2023</code> <code>INC-052</code></div>
-          <p>De un comentario sobre Chema y la cuesta del rocódromo saltan chispas entre Julián (<code>"Ana viene a más quedadas que tú"</code>), Ale y Dani. Dani firma su mensaje más largo de toda la historia (<code>640</code> caracteres) sacando bullying de primaria (<code>"el juego llamado huir de Daniel Bruno"</code>), llama a Julián <code>"el bolso de Ana"</code> y proclama <code>"Perdonar es de gente patética"</code>. Reta a Julián a preguntar a las amigas del viaje (<code>"No hay huevos"</code>). Cuando Julián trae las capturas reales de Irene confirmando que Dani <em>"diste mucho porculo"</em> y es <em>"castrante hasta para gente que has visto un día"</em>, Dani grita montaje y corta relación con ambos iniciando su <strong>Exilio I (69 días fuera)</strong>.</p>
-        </div>
-      </article>
-      <article class="episode" data-r>
-        <div class="ep-card">
-          <svg class="ep-art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-reno"/></svg>
-          <div class="ep-num">EPISODIO 04</div>
-          <h4>El Otoño Negro: <em>Chopped</em> de Messi, 790 Mensajes y el <em>Reno Montaje</em></h4>
-          <div class="ep-date"><code>15/10–28/11/2023</code> <code>INC-071</code>, <code>INC-075</code>–<code>INC-078</code></div>
-          <p>En mes y medio Dani se come el chopped medicado del perro operado de Ale (<code>"menos de dos euros"</code>), suelta el spoiler final de <em>Shingeki</em> (<code>"Te jodes / Por perro"</code>), y el <code>09/11</code> abre un juicio sumarísimo de <strong>790 mensajes</strong> contra el grupo sacando cosas de 2014 (cuando Pablo dijo <code>"Shuuuuu está ligando"</code>). Aunque Edu y Julián le piden perdón sincero por la ESO, Dani rechaza disculparse por WhatsApp (<code>"No quiero darte ese placer"</code>) y exige que vayan <strong>en séquito</strong> a pedirle perdón en persona primero (<em>"estrategia trampa"</em>). El <code>28/11</code>, ante un montaje de Pablo (<code>"el reno montaje"</code>), amenaza con partirle la cara y <strong>se sale 4 veces en el mismo minuto</strong> mientras lo vuelven a meter, huyendo a su <strong>Exilio II (84 días fuera)</strong> tras bloquear a Edu y exigirle <em>"cómase un huevo"</em> para ir a su cumpleaños.</p>
-        </div>
-      </article>
-      <article class="episode" data-r>
-        <div class="ep-card">
-          <svg class="ep-art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-suit"/></svg>
-          <div class="ep-num">EPISODIO 05</div>
-          <h4>La Guerra del <em>Simp</em>, la Economía Creativa y la Traición del Traje</h4>
-          <div class="ep-date"><code>09/05–05/06/2024</code> <code>INC-087</code>, <code>INC-091</code></div>
-          <p>El <code>09/05</code> (<code>684</code> mensajes) Dani asegura que <em>"el 90% de los impuestos sobran"</em> tras quejarse de que sepulten su plan de Papa John's. Semanas después (<code>28/05</code> y <code>05/06</code>), ataca ferozmente a Pablo tildándolo de <code>"simp lamentable"</code> por quedar con Raquel en vez de ir a la graduación de Ale... hasta que el grupo le recuerda que Dani faltó tanto al paintball como al pifostio del cumpleaños de Ale, y <strong>ese mismo día</strong> Dani se borra de la graduación de Ale porque hay que ir en traje.</p>
-        </div>
-      </article>
-      <article class="episode" data-r>
-        <div class="ep-card">
-          <svg class="ep-art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-bonsai"/></svg>
-          <div class="ep-num">EPISODIO 06</div>
-          <h4>El Exilio III (137 Días) y la Era de los Bonsáis y las IAs</h4>
-          <div class="ep-date"><code>20/07/2024–30/04/2025</code> <code>INC-100</code>, <code>INC-124</code>, <code>INC-126</code>, <code>INC-130</code></div>
-          <p>Tras estallar por <em>Deadpool 3</em> (<code>"Por autistas"</code>), desaparece <strong>4 meses y medio</strong>. Al regresar el <code>05/12/2024</code> (<code>"sois subnormales todos"</code>), choca con la nueva hornada del grupo (Fernando y Rubén) y con los experimentos de IA de Pablo que lo retratan al dedillo. El <code>21/03/2025</code>, una encuesta de Rubén pregunta a quién prefieren en la quedada: <strong>Daniel Bruno: 0 votos · El bonsái de Pablo (<code>Kaede</code>): 6 votos</strong>.</p>
-          <div class="panel" style="margin:14px 0 0;padding:12px" aria-hidden="true">
-            <p class="panel-title" style="font-size:11px">📊 Encuesta · Rubén Moya</p>
-            <div class="versus">
-              <div class="vs-row other"><span>Daniel Bruno</span><b>0</b><div class="tr"><div class="fl" data-w="0"></div></div></div>
-              <div class="vs-row"><span>🌳 El bonsái de Pablo (Kaede)</span><b>6</b><div class="tr"><div class="fl" data-w="100"></div></div></div>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="episode" data-r>
-        <div class="ep-card">
-          <svg class="ep-art" viewBox="0 0 16 16" aria-hidden="true"><use href="#i-pack"/></svg>
-          <div class="ep-num">EPISODIO 07 · FINAL</div>
-          <h4>La Semanas del Apocalipsis: Steam, Ana, las Mochilas y el Destierro</h4>
-          <div class="ep-date"><code>12–23/09/2025</code> <code>INC-140</code>–<code>INC-144</code></div>
-          <p>El <code>14/09</code> (<code>466</code> msgs), tras llamar <code>"zorra castrada"</code> a Julián y hacerle salirse del grupo, Dani promete no hablar más de Ana y <strong>12 minutos después la llama <code>"puta"</code></strong>, revelando un viejo rencor por un grupo familiar de Steam. El <code>16/09</code> rechaza disculparse con Julián a cambio del mod de mochilas en Minecraft (<code>"Prefiero salirme"</code>). El <code>23/09</code> entra solo al servidor a las <strong>3 de la mañana</strong> pese a prometer esperar a la inauguración, aplana una montaña entera en 6 horas, pierde <strong>0–5</strong> (Rubén) y <strong>0–6</strong> (Fernando) la votación de mochilas y <strong>5–0</strong> la del reseteo, rompe su pacto votando <em>"q ale empiece a salir con ana"</em>, manda a Eduardo a <em>"chuparme el ojete"</em>, lo llama <em>"Puto gilipollas"</em> y a las <strong>13:20</strong> Eduardo ejecuta la sentencia final: <strong><code>Al carajo</code></strong>.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+    <h3 class="sec" id="g-apodos" data-r><span class="n">II</span>El Lore de los Apodos</h3>
 
-<!-- ================= CATÁLOGO ================= -->
-<section id="catalogo" style="padding-top:30px">
-  <div class="wrap">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">144</div>
-      <div class="deco" aria-hidden="true"><svg viewBox="0 0 120 80" style=""><use href="#i-chopped"/></svg></div>
-      <div class="chapter-kicker">Capítulo VI · Archivo</div>
-      <h2 class="chapter-title">Catálogo Maestro <em>Completo</em><span class="sub">de los 144 Incidentes (2022–2025)</span></h2>
+    <p class="lead narrow" style="padding:0" data-r>Ningún personaje mitológico de <em>El Puto Circo</em> acumuló tantos alias ni tanta mitología propia:</p>
+
+    <div class="gm-evolve" data-r aria-hidden="true"><span>El Prensas</span><i>→</i><span>Perchita</span><i>→</i><span>GM</span><i>→</i><span class="last">GM²</span></div>
+
+    <div class="evo">
+      <article class="evo-card" data-r>
+        <span class="lv">FORMA 1</span>
+        <div class="tag">El Prensas</div>
+        <p style="margin:0"><strong><code>El Prensas</code>:</strong> Es la etiqueta con la que Pablo lo guardó en la agenda desde antes del nacimiento del grupo (<code>Daniel Bruno (El Prensas)</code>). Aunque nunca se redacta la escena fundacional en texto, cuando Fernando pregunta directamente el <code>30/06/2025</code> (<code>"Porque el prensas?"</code>) tras un vídeo antiguo rescatado, Edu responde <code>"Hostia / Recuerdo desbloqueado"</code>, y en <code>17/12/2023</code> Julián ya bromeaba <em>"con la presa que hace ya se pone en forma"</em>, vinculándolo a su obsesión de gimnasio (<em>"el gym bro"</em>).</p>
+        <svg viewBox="0 0 120 50" style="width:110px;height:46px;position:absolute;right:14px;bottom:12px;opacity:.25" aria-hidden="true"><use href="#i-gym"/></svg>
+      </article>
+      <div class="evo-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></div>
+      <article class="evo-card" data-r style="--d:.08s">
+        <span class="lv">FORMA 2</span>
+        <div class="tag">Perchita</div>
+        <p style="margin:0"><strong><code>Perchita</code> / <code>Perchi</code> / <code>El Perchas</code> / <code>El Reperchas</code>:</strong> Apodo cotidiano acuñado principalmente por Alejandro (<code>Perchi</code> desde junio de 2022; <code>Perchita</code> en noviembre de 2022 jugando con un sticker: <em>"Cuando pongas un sticker de los tuyos Julián, Perchita se acercará... Perchita se aleja"</em>) y por Edu (<code>El Perchas</code>). Oscila entre el cariño de mascota del grupo y la burla cuando se pone dramático (<em>"Modo Perchita"</em>).</p>
+      </article>
+      <div class="evo-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></div>
+      <article class="evo-card wide" data-r>
+        <span class="lv">FORMA FINAL</span>
+        <div class="tag">GM → GM²</div>
+        <p><strong><code>GM</code> — La Mutación Definitiva (<code>Guarra Mayor</code> → <code>Gordo Mamón</code> → <code>Game Master</code> → <code>GM²</code>):</strong></p>
+        <ul class="phases">
+          <li data-r><strong>Fase 1 (Origen, <code>13/03/2024 15:59</code>):</strong> Eduardo le suelta <em>"Porque tú eres la Guarra Mayor / Puta Guarraaaaa"</em> y Dani responde teatralmente <em>"Noooooooooo / Cómo lo supiiiiissteeeeeee"</em>.</li>
+          <li data-r style="--d:.08s"><strong>Fase 2 (Abreviatura cifrada, <code>10/04/2024 11:51</code>):</strong> Pablo escribe <em>"Me jode darle la razón a GM"</em>. Dani sospecha al instante: <em>"Gordo mamón?"</em>, a lo que Pablo le vacila con <em>"Game master"</em>. Dos días después aparece en la lista oficial de motes para la feria: <code>1. El pajas · 2. El pechofrío · 3. Visualnovel máster · 4. GM</code>.</li>
+          <li data-r style="--d:.16s"><strong>Fase 3 (Canonización post-mortem, <code>23/09/2025 19:04</code>):</strong> Horas después de su expulsión definitiva, al entrar Pablo al servidor de Minecraft y encontrar la montaña aplanada por Dani, lo bautiza como <strong>"Yacimientos del hogar de un Gordus Mamonis Mamonis"</strong> y Julián sella la fórmula: <strong><code>GM²</code></strong>. A partir de ahí nacen <em>el Monumento al GM</em>, <em>el 100 GM</em> (100 Montaditos), <em>el Rap del GM</em> y <em>la carta de la rata gorda</em>.</li>
+        </ul>
+        <div class="art-row" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><use href="#i-grass"/></svg>
+          <svg viewBox="0 0 100 70" style="height:56px"><use href="#i-monta"/></svg>
+          <svg viewBox="0 0 70 100"><use href="#i-card"/></svg>
+        </div>
+      </article>
+      <article class="evo-card wide" data-r>
+        <span class="lv">DLC</span>
+        <p style="margin:0"><strong>Otros apodos notables:</strong> <code>Nini Supremo</code> (Pablo lo tenía guardado como <code>"Nini"</code> en su agenda frente a <code>"Julian (Titulado)"</code> y <code>"Alejandro Manzano (Titulado)"</code> en 2023), <code>Gigante Brunot</code> / <code>Brunot</code> (por <em>Doraemon</em>), <code>Pingüino</code> (por el traje en las prácticas de El Corte Inglés), <code>Papa Noel</code> (Ale), <code>Yeti</code> (por no salir por encima de 40 °C), <code>Godbruno</code>, <code>Dani Tóxica</code> y <code>La Novia Tóxica del Grupo</code>.</p>
+        <div class="nick-cloud" aria-hidden="true">
+          <span class="nick" style="--i:1">Nini Supremo</span><span class="nick" style="--i:2">Gigante Brunot</span><span class="nick" style="--i:3">Brunot</span><span class="nick" style="--i:4">🐧 Pingüino</span><span class="nick" style="--i:5">🎅 Papa Noel</span><span class="nick" style="--i:6">❄️ Yeti</span><span class="nick" style="--i:7">Godbruno</span><span class="nick" style="--i:8">Dani Tóxica</span><span class="nick" style="--i:9">La Novia Tóxica del Grupo</span>
+        </div>
+        <svg viewBox="0 0 80 100" style="width:60px;height:76px;position:absolute;right:14px;top:12px;opacity:.5" aria-hidden="true"><use href="#i-peng"/></svg>
+      </article>
     </div>
-    <div class="cat-controls" id="catControls">
-      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"/></svg><input type="search" id="q" placeholder="Busca: chopped, Minecraft, rocódromo, INC-077…" autocomplete="off" aria-label="Buscar incidentes"></label>
-      <div class="filters" id="yearFilters" role="group" aria-label="Filtros"></div>
-      <div class="filter-row2">
-        <select id="rivalSel" aria-label="Filtrar por rival"><option value="">Todos los rivales</option></select>
-        <select id="catSel" aria-label="Filtrar por categoría"><option value="">Todas las categorías</option></select>
+
+    <h3 class="sec" id="g-lengua" data-r><span class="n">III</span>Autopsia Lingüística</h3>
+
+    <p class="lead narrow" style="padding:0" data-r>Si un lingüista forense encontrara un fragmento anónimo de <em>El Puto Circo</em>, tardaría <strong>0,4 segundos</strong> en identificar a Daniel Bruno gracias a cuatro huellas dactilares inconfundibles:</p>
+
+    <h4 class="sub" data-r><span class="n">3.1</span> El Boicot Ortográfico a las Letras <code>u-e</code></h4>
+    <div class="split-2">
+      <div>
+        <div class="que-demo" data-r aria-hidden="true"><span class="q">q</span><span class="ue"><span>u</span><span>e</span></span></div>
+        <div class="ratio-grid" aria-hidden="true">
+          <div class="ratio" data-r><div class="w">q / que</div><div class="nums"><span>Dani <b>1.733</b>/<b>41</b></span></div><div class="split"><i data-w="97.7"></i></div><div class="nums"><span>97,7% q</span></div></div>
+          <div class="ratio" data-r style="--d:.05s"><div class="w">porq / porque</div><div class="nums"><span>Dani <b>164</b> vs <b>0</b></span></div><div class="split"><i data-w="99.4"></i></div><div class="nums"><span>porque: 1 vs 585</span></div></div>
+          <div class="ratio" data-r style="--d:.1s"><div class="w">aro (claro)</div><div class="nums"><span><b>83</b> veces</span></div><div class="split"><i data-w="75.9"></i></div><div class="nums"><span>63 solo</span></div></div>
+          <div class="ratio" data-r style="--d:.15s"><div class="w">pos (pues)</div><div class="nums"><span><b>73</b> vs <b>15</b></span></div><div class="split"><i data-w="83"></i></div><div class="nums"><span>baso 🥛</span></div></div>
+        </div>
       </div>
-      <div class="cat-count"><span>Mostrando <b id="shown">144</b> de 144</span><button class="btn-ghost" id="randomInc" style="padding:6px 12px;font-size:12px;display:inline-flex;gap:6px;align-items:center"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-dice"/></svg>Incidente aleatorio</button></div>
-    </div>
-    <div id="incidents"></div>
-  </div>
-</section>
-
-<div class="marquee alt" aria-hidden="true"><div class="mq-track"><span>Se ha quedado sin Minecraft</span><span>sin grupo de Steam</span><span>y sin pokémons</span><span>Perchita se ha rajado</span><span>100 GM</span><span>Se ha quedado sin Minecraft</span><span>sin grupo de Steam</span><span>y sin pokémons</span><span>Perchita se ha rajado</span><span>100 GM</span></div></div>
-
-<!-- ================= EPÍLOGO ================= -->
-<section id="epilogo">
-  <div class="wrap">
-    <div class="chapter-head" data-r>
-      <div class="chapter-num" aria-hidden="true">E</div>
-      <div class="deco" aria-hidden="true"><svg viewBox="0 0 100 100" style=""><use href="#i-grass"/></svg></div>
-      <div class="chapter-kicker">Epílogo</div>
-      <h2 class="chapter-title">La Vida Después <em>de Perchita</em><span class="sub">Septiembre 2025 – Octubre 2026</span></h2>
-    </div>
-    <p class="lead narrow" style="padding:0" data-r>Expulsado el <code>23/09/2025</code> a las <code>13:20</code>, el resto del chat vivió una curiosa transición en tres fases documentadas hasta el cierre del historial (<code>16/10/2026</code>):</p>
-
-    <div class="phases-ep">
-      <article class="phase-card" data-r>
-        <svg class="art" viewBox="0 0 70 100" aria-hidden="true"><use href="#i-card"/></svg>
-        <span class="ph">FASE 1</span>
-        <h4>La Resaca y el Bloqueo Selectivo (<code>24/09 – 16/10/2025</code>):</h4>
-        <p>Al día siguiente, Pablo cuenta que tras intentar mediar, Dani lo ha bloqueado en WhatsApp, ha borrado a casi todos de amigos en Steam y también del <em>Pokémon TCG Pocket</em>. El inventario de bajas de Ale y Pablo es lapidario: <em>"Se ha quedado sin Minecraft, sin grupo de Steam y sin pokémons"</em>, mientras Pablo confiesa: <em>"Lo triste es que sin tenerle es todo más fácil y tranquilo"</em>. Sin embargo, Ale descubre el <code>14/10</code> un detalle revelador: Dani no bloqueó la cuenta de arte de Ale, ni borró del Pokémon o Instagram a Raquel, Elena ni Marta. Como resumió Fernando: <em>"Lo que le interesa al listo"</em>.</p>
-      </article>
-      <article class="phase-card" data-r style="--d:.08s">
-        <svg class="art" viewBox="0 0 100 70" aria-hidden="true"><use href="#i-monta"/></svg>
-        <span class="ph">FASE 2</span>
-        <h4>La Mitificación como Folclore (<code>Octubre 2025 – Marzo 2026</code>):</h4>
-        <p>Sin Dani presente, <strong>GM / Perchita se convirtió en deidad cómica del grupo</strong>: Ale construyó el <em>"Monumento al GM"</em> en Minecraft (<code>21/10/2025</code>); al 100 Montaditos pasaron a llamarlo <strong>"100 GM"</strong> (<code>ene–feb 2026</code>); Fernando recordó con nostalgia <em>"El mod de las mochilas 😭"</em> (<code>05/03/2026</code>) y <em>"el rap del GM"</em>; y cuando Ale justificó un enfado en noviembre diciendo <em>"Es como los enfados de Perchita"</em>, Julián cerró la discusión: <em>"Perchita es un caso bastante extremo"</em>.</p>
-      </article>
-      <article class="phase-card" data-r style="--d:.16s">
-        <svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg>
-        <span class="ph">FASE 3</span>
-        <h4>El Último Espasmo y el Silencio Eterno (<code>08/03/2026 – 16/10/2026</code>):</h4>
-        <p>Incluso fuera del chat, su patrón seguía intacto. El <code>02/01/2026</code> vuelven a comentar en el grupo mensajes suyos por privado haciéndose el ofendido (<em>"Como si fuéramos nosotros los que la hubiéramos liado"</em>). Y el <strong>8 de marzo de 2026</strong>, cuando parecía que por fin iba a quedar con parte del grupo, Edu avisó <em>"Dile que luego amaina"</em> y Ale confirmó la última profecía documentada del historial: <strong><code>"Perchita se ha rajado"</code></strong>. Desde el <code>10 de marzo</code> hasta el <code>16 de octubre de 2026</code>, su nombre no volvió a pronunciarse ni una sola vez.</p>
-      </article>
+      <details class="more inline" data-r><summary><span>Leer el análisis completo</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><p>Daniel mantiene una guerra personal contra el dígrafo <code>que</code>. De cada 100 veces que necesita escribir esa palabra, <strong>97,7 veces escribe <code>q</code></strong> (<code>1.733</code> veces <code>q</code> frente a solo <code>41</code> <code>que</code>), mientras que el resto del grupo escribe <code>que</code> el <strong>99,6%</strong> de las veces (<code>8.936</code> <code>que</code> vs <code>40</code> <code>q</code>). Lo mismo ocurre con <strong><code>porq</code> (<code>164</code> vs <code>0</code>)</strong>, <strong><code>por q</code> (<code>28</code> vs <code>0</code>)</strong> frente a <code>porque</code> (<code>1</code> vs <code>585</code>), y <strong><code>aunq</code> (<code>15</code> vs <code>2</code>)</strong> frente a <code>aunque</code> (<code>0</code> vs <code>188</code>). Además, practica una fonética andaluza selectiva donde <code>"claro"</code> siempre muta en <strong><code>"aro"</code></strong> (<code>83</code> veces, <code>63</code> como mensaje único) y <code>"pues"</code> en <strong><code>"pos"</code></strong> (<code>73</code> vs <code>15</code>), aunque de vez en cuando defienda usar un <strong><code>"baso"</code></strong> normal en casa de Ale.</p></div></details>
     </div>
 
-    <div class="narrow" style="padding:0;margin-top:30px">
+    <h4 class="sub" data-r><span class="n">3.2</span> El Diccionario Perchita: Frecuencias Reales vs. Resto del Grupo</h4>
+    <div class="panel" data-r>
+      <p class="panel-title">▮ Diccionario Perchita</p>
+      <p class="panel-sub">Ratio Dani vs. Grupo (escala logarítmica). Toca una palabra para ver su ficha.</p>
+      <div class="vocab-chart" id="vocabChart"></div>
+      <div class="vocab-detail" id="vocabDetail" aria-live="polite"></div>
+    </div>
+
+    <details class="more" data-r><summary><span>Ver el diccionario completo · 13 expresiones</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><div class="dict" id="dict">
+      <article class="dict-entry" data-word="q"atio="138.6"><h5><span><strong><code>q</code></strong> <em>(vs <code>que</code>)</em></span><span class="ratio-b">138,6x</span></h5><p class="fn">Ahorro de energía vital entre ráfaga y ráfaga</p><div class="row"><span>Usos de Dani: <b>1.733</b></span><span>Tasa Dani (/1k msgs): <b>151,04</b></span><span>Usos Resto Grupo: <b>40</b></span><span>Ratio: <b>138,6x</b></span></div></article>
+      <article class="dict-entry" data-word="porq / por q"atio="inf"><h5><span><strong><code>porq</code> / <code>por q</code></strong></span><span class="ratio-b">∞ (Exclusiva)</span></h5><p class="fn">Justificación defensiva instantánea</p><div class="row"><span>Usos de Dani: <b>192</b></span><span>Tasa Dani (/1k msgs): <b>16,73</b></span><span>Usos Resto Grupo: <b>0</b></span><span>Ratio: <b>∞ (Exclusiva)</b></span></div></article>
+      <article class="dict-entry" data-word="chavales"atio="14.2"><h5><span><strong><code>chavales</code></strong></span><span class="ratio-b">14,2x</span></h5><p class="fn">Llamada a filas antes de proponer plan o quejarse</p><div class="row"><span>Usos de Dani: <b>359</b> <em>(317 solo)</em></span><span>Tasa Dani (/1k msgs): <b>31,29</b></span><span>Usos Resto Grupo: <b>81</b></span><span>Ratio: <b>14,2x</b></span></div></article>
+      <article class="dict-entry" data-word="xd / xdddddd..."atio="3.2"><h5><span><strong><code>xd</code> / <code>xdddddd...</code></strong></span><span class="ratio-b">3,2x</span></h5><p class="fn">Risa pasivo-agresiva; la longitud de <code>d</code> mide el nivel de picor</p><div class="row"><span>Usos de Dani: <b>576</b></span><span>Tasa Dani (/1k msgs): <b>50,20</b></span><span>Usos Resto Grupo: <b>581</b></span><span>Ratio: <b>3,2x</b></span></div></article>
+      <article class="dict-entry" data-word="Ataques oro-genitales*"atio="3.5"><h5><span><strong>Ataques oro-genitales*</strong></span><span class="ratio-b">3,5x</span></h5><p class="fn">Cierre de debate cuando se queda sin argumentos (<code>chúpala</code>, <code>cómeme un huevo/cipote/ojete</code>)</p><div class="row"><span>Usos de Dani: <b>216</b></span><span>Tasa Dani (/1k msgs): <b>18,82</b></span><span>Usos Resto Grupo: <b>200</b></span><span>Ratio: <b>3,5x</b></span></div></article>
+      <article class="dict-entry" data-word="chupala"atio="16.7"><h5><span><strong><code>chupala</code></strong></span><span class="ratio-b">16,7x</span></h5><p class="fn">Respuesta automática universal a cualquier réplica</p><div class="row"><span>Usos de Dani: <b>88</b> <em>(63 solo)</em></span><span>Tasa Dani (/1k msgs): <b>7,67</b></span><span>Usos Resto Grupo: <b>17</b></span><span>Ratio: <b>16,7x</b></span></div></article>
+      <article class="dict-entry" data-word="aro"atio="5.9"><h5><span><strong><code>aro</code></strong> <em>(por <code>claro</code>)</em></span><span class="ratio-b">5,9x</span></h5><p class="fn">Sarcasmo seco o confirmación condescendiente</p><div class="row"><span>Usos de Dani: <b>83</b> <em>(63 solo)</em></span><span>Tasa Dani (/1k msgs): <b>7,23</b></span><span>Usos Resto Grupo: <b>45</b></span><span>Ratio: <b>5,9x</b></span></div></article>
+      <article class="dict-entry" data-word="terrible"atio="12.6"><h5><span><strong><code>terrible</code></strong></span><span class="ratio-b">12,6x</span></h5><p class="fn">Sentencia dramática sobre cualquier contratiempo menor</p><div class="row"><span>Usos de Dani: <b>62</b> <em>(41 solo)</em></span><span>Tasa Dani (/1k msgs): <b>5,40</b></span><span>Usos Resto Grupo: <b>16</b></span><span>Ratio: <b>12,6x</b></span></div></article>
+      <article class="dict-entry" data-word="mentira"atio="4.2"><h5><span><strong><code>mentira</code></strong></span><span class="ratio-b">4,2x</span></h5><p class="fn">Negar capturas, horarios o recuerdos ajenos sin aportar pruebas</p><div class="row"><span>Usos de Dani: <b>39</b> <em>(26 solo)</em></span><span>Tasa Dani (/1k msgs): <b>3,40</b></span><span>Usos Resto Grupo: <b>30</b></span><span>Ratio: <b>4,2x</b></span></div></article>
+      <article class="dict-entry" data-word="discrepo"atio="45.4"><h5><span><strong><code>discrepo</code></strong></span><span class="ratio-b">45,4x</span></h5><p class="fn">Escudo pseudo-culto justo antes de soltar una barbaridad</p><div class="row"><span>Usos de Dani: <b>26</b> <em>(22 solo)</em></span><span>Tasa Dani (/1k msgs): <b>2,27</b></span><span>Usos Resto Grupo: <b>2</b></span><span>Ratio: <b>45,4x</b></span></div></article>
+      <article class="dict-entry" data-word="evidentemente"atio="24.0"><h5><span><strong><code>evidentemente</code></strong></span><span class="ratio-b">24,0x</span></h5><p class="fn">Presentar su opinión subjetiva como axioma físico indiscutible</p><div class="row"><span>Usos de Dani: <b>22</b></span><span>Tasa Dani (/1k msgs): <b>1,92</b></span><span>Usos Resto Grupo: <b>3</b></span><span>Ratio: <b>24,0x</b></span></div></article>
+      <article class="dict-entry" data-word="subnormal"atio="3.3"><h5><span><strong><code>subnormal</code></strong></span><span class="ratio-b">3,3x</span></h5><p class="fn">Comodín insultante favorito (Edu: <em>"Tiene dos frases y una es decir subnormal"</em>)</p><div class="row"><span>Usos de Dani: <b>28</b></span><span>Tasa Dani (/1k msgs): <b>2,44</b></span><span>Usos Resto Grupo: <b>27</b></span><span>Ratio: <b>3,3x</b></span></div></article>
+      <article class="dict-entry" data-word="ameisin"atio="48.2"><h5><span><strong><code>ameisin</code></strong></span><span class="ratio-b">48,2x</span></h5><p class="fn">Ironía bilingüe deformada cuando algo le parece lamentable</p><div class="row"><span>Usos de Dani: <b>15</b></span><span>Tasa Dani (/1k msgs): <b>1,31</b></span><span>Usos Resto Grupo: <b>1</b></span><span>Ratio: <b>48,2x</b></span></div></article>
+    </div>
+    <p class="footnote narrow" style="padding:0"><em>*Incluye <code>chúpala</code>, <code>cómeme un huevo/los huevos/la polla/el cipote/el ojete</code>, <code>lámeme las bolas</code>, <code>me comes un nabo</code> y variantes.</em></p></div></details>
+
+    <h4 class="sub" data-r><span class="n">3.3</span> Los Dos Registros de Daniel Bruno (y el Problema del Sarcasmo Plano)</h4>
+    <p class="narrow" style="padding:0" data-r>Daniel oscila bruscamente entre dos personajes incompatibles:</p>
+    <div class="flip" id="flipCard" data-r role="button" tabindex="0" aria-label="Girar tarjeta: Caballero de Debate / Sicario de Barrio">
+      <div class="flip-inner">
+        <div class="flip-face flip-front">
+          <svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-gavel"/></svg>
+          <div class="role">El Caballero de Debate</div>
+          <p><strong>El Caballero de Debate (<code>discrepo</code>, <code>evidentemente</code>, <code>efectivamente</code>, <code>literalmente</code>, <code>pa empezar</code>):</strong> Cuando quiere parecer superior en debates sobre economía (<em>"solo con usar la lógica te das cuenta de q el 90% de los impuestos sobran"</em>), moral (<em>"una mujer es más q un coño, Ale madura"</em>) o justicia (<em>"mi opinión es 100% objetiva"</em>), adopta un tono solemne de tertuliano.</p>
+          <div class="hint"><svg viewBox="0 0 24 24"><use href="#i-flip"/></svg>Toca: en 30 segundos…</div>
+        </div>
+        <div class="flip-face flip-back">
+          <svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-target"/></svg>
+          <div class="role">El Sicario de Barrio</div>
+          <p><strong>El Sicario de Barrio (<code>puta</code>, <code>perra</code>, <code>zorra castrada</code>, <code>cómase un huevo</code>, <code>te parto la puta cara</code>):</strong> En cuanto alguien le lleva la contraria con un dato o un meme, el tertuliano desaparece en 30 segundos y da paso al insulto rápido, la amenaza física o el <em>"Q si Pablo q si"</em> (<code>30</code> veces usado como cierre despectivo).</p>
+          <div class="hint"><svg viewBox="0 0 24 24"><use href="#i-flip"/></svg>Toca para volver al tertuliano</div>
+        </div>
+      </div>
+    </div>
+    <div class="narrow" style="padding:0">
       <div class="chat" data-r>
-        <div class="bubble first" style="--who:#9dff00"><span class="who">Eduardo Merino · 08/03/2026</span>Dile que luego amaina</div>
-        <div class="bubble first" style="--who:#ffc93d" data-type><span class="who">Alejandro Manzano</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body">Perchita se ha rajado</span></div>
+        <div class="bubble first" style="--who:#ffc93d"><span class="who">Pablo Valderas · 17/04/2025</span>Si suena siempre igual<span class="meta"></span></div>
+        <div class="bubble">No sé le ha pillado nunca el sarcasmo</div>
+        <div class="bubble out first">Era todo ironía, subnormal<span class="meta">10/02/2025</span></div>
       </div>
+      <p data-r><strong>El Enigma del Sarcasmo:</strong> Como resumió Pablo el <code>17/04/2025</code> (<code>"Si suena siempre igual / No sé le ha pillado nunca el sarcasmo"</code>), Daniel dice exactamente con las mismas palabras y la misma ausencia de emojis tanto sus bromas como sus cabreos reales —y, cuando le pillan pasándose de la raya (como el <code>10/02/2025</code> con el senderismo), saca el comodín de <em>"Era todo ironía, subnormal"</em>.</p>
     </div>
 
-    <div class="verdict-final narrow" data-r style="margin-top:34px">
-      <span class="stamp" aria-hidden="true">BANEADO</span>
-      <div class="callout-tag">☠ Caution</div>
-      <p><strong>Conclusión del Peritaje:</strong> Daniel Bruno no fue expulsado por un mod de mochilas ni por un mal día de sueño. Fue expulsado por agotar durante <strong>40 meses</strong> la paciencia colectiva de siete amigos a base de ultimátums, memoria selectiva, ataques personales a parejas y una incapacidad clínica de decir <em>"perdón, la he cagado"</em> antes de pulsar el botón de autodestrucción. <strong>Larga vida al GM².</strong></p>
+    <h3 class="sec" id="g-ciclo" data-r><span class="n">IV</span>Los 8 Patrones Repetitivos del <em>Ciclo Perchita</em></h3>
+
+    <p class="lead narrow" style="padding:0" data-r>¿Se repiten patrones en los 144 conflictos? <strong>No es que se repitan: Daniel Bruno vive atrapado en un bucle temporal tan predecible que el propio grupo lo llamó <em>"Steins;Gate"</em> y <em>"un ciclo sin fin"</em></strong>. De hecho, cuando Pablo le pasó el chat a ChatGPT en marzo de 2025, la IA recreó al instante su personalidad exacta: quedarse sin plan, amenazar al grupo, llamar cobarde a quien no viene y gritar <em>"¡ME HABÉIS FALLADO!"</em>.</p>
+
+    <div class="cycle-wrap" data-r>
+      <div class="cycle" id="cycle">
+        <svg viewBox="0 0 520 520" id="cycleSvg" aria-hidden="true"></svg>
+        <div class="cycle-center"><div><div class="cc-n" id="ccN">1</div><div class="cc-t" id="ccT"></div><div class="cc-b" id="ccB"></div></div></div>
+      </div>
+      <ol class="cycle-list" id="cycleList">
+        <li data-k="A"><b>1</b><span>1. Propone plan vago o exige hora/sitio fijo (rocódromo)</span></li>
+        <li data-k="B"><b>2</b><span>2. El grupo no responde al instante o propone alternativa (caminar/cine VOSE/dinero)</span></li>
+        <li data-k="C"><b>3</b><span>3. Escala rápido: 'sois unos mierdas', 'simps', 'no me hacéis caso'</span></li>
+        <li data-k="D"><b>4</b><span>4. Abre el Cajón de Mierda (2014, Primaria, parejas, fotos)</span></li>
+        <li data-k="E"><b>5</b><span>5. ¿Alguien le lleva la contraria con pruebas?</span><span class="arr">Sí ↓</span></li>
+        <li data-k="F"><b>✗</b><span>Niega la realidad ('mentira'), exige perdón en séquito o pulsa Botón Nuclear</span></li>
+        <li data-k="G"><b>6</b><span>6. Salida del grupo / Bloqueos / Renombres ('El Circo', 'Pablo la chupa')</span></li>
+        <li data-k="H"><b>7</b><span>7. Pasan días o meses -&gt; Pide volver por privado a Tony/Julián</span></li>
+        <li data-k="I"><b>8</b><span>8. Regresa insultando ('Putas / Zorras / Subnormales') y reinicia el ciclo</span><span class="arr">↻ 1</span></li>
+      </ol>
     </div>
 
-    <div class="monument" id="monument">
-      <div class="mc-grid" id="mcGrid" aria-hidden="true"></div>
-      <div class="pix-caption" data-r aria-hidden="true">MONUMENTO AL GM · 21/10/2025</div>
-      <div class="long-live" data-r aria-hidden="true">Larga vida <br>al <span>GM²</span></div>
+    <h4 class="sub" id="g-patrones" data-r>Los 8 Patrones Inmutables Documentados en los Logs:</h4>
+    <div class="patterns">
+      <details class="pat" data-r open>
+        <summary><span class="ic"><svg viewBox="0 0 100 80"><use href="#i-hold"/></svg></span><b><small>PATRÓN 01</small>La Alergia Estructural a Caminar, a las Cuestas y al Calor ("El Yeti del Rocódromo"):</b><span class="pm"></span></summary>
+        <div class="body"><p>Desde junio de 2022 hasta 2025 exige quedar en el <strong>rocódromo</strong> en lugar del parque por no subir una cuesta corta (<code>INC-032</code>, <code>INC-047</code>), se niega a caminar de Nervión al Centro (<code>INC-035</code>) o a hacer senderismo (<code>INC-045</code>, <code>INC-119</code>), rechaza ponerse traje para la graduación de un amigo (<code>INC-091</code>) y exige el <strong>asiento de copiloto</strong> alegando mareo aunque luego la líe con la radio (<code>INC-056</code>, <code>INC-135</code>).</p></div>
+      </details>
+      <details class="pat" data-r>
+        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-chats"/></svg></span><b><small>PATRÓN 02</small>La Paradoja del "Otro Grupo":</b><span class="pm"></span></summary>
+        <div class="body"><p>El <code>21/05/2022</code> él mismo se negó a estar en el grupo original de quedadas (<code>"Pues yo en el otro no voy a estar"</code>). Acto seguido, durante más de tres años montó en cólera cada vez que los demás cerraban un plan allí o por privado (<code>INC-003</code>, <code>INC-011</code>, <code>INC-014</code>, <code>INC-036</code>, <code>INC-100</code>).</p></div>
+      </details>
+      <details class="pat" data-r>
+        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-box"/></svg></span><b><small>PATRÓN 03</small>El Cajón de Mierda Decenal (<code>"Yo no olvido, os la guardo"</code>):</b><span class="pm"></span></summary>
+        <div class="body"><p>Incapaz de cerrar una discusión sobre algo ocurrido hoy (el chopped, el spoiler de <em>Shingeki</em>, llegar tarde o un mod de Minecraft), saca agravios de <strong>hace más de 10 años</strong>: el partido de la ESO en que Pablo dijo <em>"Shuuuuu está ligando"</em> delante de una chica, el juego infantil de <em>"huir de Daniel Bruno"</em> en 1º de primaria o el viejo lío de Julián y Paola. Como confesó el <code>09/11/2023</code>: <em>"Yo no olvidó / Cada putada q me habéis hecho / Os la guardo / No tenéis derecho de reprocharme una mierda"</em>.</p></div>
+      </details>
+      <details class="pat" data-r>
+        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-glass"/></svg></span><b><small>PATRÓN 04</small>La Asimetría del Cristal (<code>Ley Bruno</code> vs. Impunidad Propia):</b><span class="pm"></span></summary>
+        <div class="body"><p>Exige tolerancia cero cuando hacen una caricatura suya (<code>INC-046</code>), editan su foto en un montaje (<code>INC-077</code> <em>"te parto la puta cara"</em>) o lo ponen de protagonista en historias de IA (<code>INC-126</code>, <code>INC-130</code>). Sin embargo: (a) grabó a Pablo borracho y lo dejó en destacadas de Instagram ignorando cuando Pablo le pidió amablemente quitarlo, (b) usó fotos de los demás para stickers sin remordimientos, (c) se comió la medicación (chopped) del perro operado de Ale culpando a Edu y sin pedir perdón, y (d) soltó el spoiler final de <em>Attack on Titan</em> rematando con <em>"Te jodes / Por perro"</em>.</p></div>
+      </details>
+      <details class="pat" data-r>
+        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-radar"/></svg></span><b><small>PATRÓN 05</small>El Radar Anti-Simps (Hostilidad Crónica hacia Novias Ajenas):</b><span class="pm"></span></summary>
+        <div class="body"><p>Si Julián o Pablo tienen pareja (<strong>Ana</strong> o <strong>Raquel / "la diabla"</strong>) o incluso planes laborales/familiares (como ver a sus abuelos en Domingo de Resurrección, <code>INC-129</code>), Daniel interpreta cualquier negativa como traición y "simpeo" (<code>44</code> usos de <code>simp*</code>). Con Julián y Ana llegó a convertir un pique privado por el grupo familiar de Steam en insultos directos hacia ella (<code>"puta"</code>, <code>"zorra castrada"</code>) que detonaron la salida de Julián el <code>14/09/2025</code> y su propia expulsión el <code>23/09/2025</code>.</p></div>
+      </details>
+      <details class="pat" data-r>
+        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-trap"/></svg></span><b><small>PATRÓN 06</small>La "Estrategia Trampa" y el Horror a Pedir Perdón:</b><span class="pm"></span></summary>
+        <div class="body"><p>Como diagnosticó Ale el <code>09/11/2023</code> (<code>"Parece que te cuesta mucho decir perdón cuando la cagas en algo"</code>) y remató Julián (<code>"estrategia trampa"</code>), Daniel literalmente declaró <code>"Perdonar es de gente patética"</code> (<code>30/04/2023</code>). Cuando se equivoca —desde comerse el chopped del perro hasta atacar a Pablo sin escuchar su audio (<code>18/05/2024</code>) o llamar puta a Ana (<code>14/09/2025</code>)— o bien exige que <strong>todos vayan primero en séquito a pedirle perdón en persona</strong> antes de dignarse a decir por qué tendría que disculparse él, o rompe los tratados de paz minutos después justificando que <em>"nadie cumple su palabra"</em>.</p></div>
+      </details>
+      <details class="pat" data-r>
+        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-nuke"/></svg></span><b><small>PATRÓN 07</small>El Botón Nuclear y los Bloqueos Selectivos:</b><span class="pm"></span></summary>
+        <div class="body"><p>Cuando se siente acorralado, dispara la secuencia completa: abandona el grupo (11 veces en total), bloquea en WhatsApp/Steam/Pokémon TCG Pocket, borra contactos de la agenda (teniendo luego que pedir por privado a Antonio que lo meta otra vez) y, como descubrieron sus amigos tras el ban definitivo de 2025, <strong>mantiene sin bloquear únicamente a perfiles femeninos o cuentas secundarias</strong> (<code>"Lo que le interesa al listo"</code>, sentenció Fernando).</p></div>
+      </details>
+      <details class="pat" data-r>
+        <summary><span class="ic"><svg viewBox="0 0 100 100"><use href="#i-target"/></svg></span><b><small>PATRÓN 08</small>Disparar Antes de Leer (y Negar la Prueba que Él Mismo Pidió):</b><span class="pm"></span></summary>
+        <div class="body"><p>Ataca por no saber la dirección del Hot Pot, por la hora del Telepizza que estaba escrita 3 días antes, por no oír un audio de Pablo, por una IP de Minecraft enviada hora y media antes o por una mención donde tampoco estaban otros dos miembros. Y en el caso cumbre del <code>30/04/2023</code>, retó a Julián a preguntar a las amigas del viaje (<code>"No hay huevos"</code>) y, cuando Julián trajo la captura confirmando que había sido molesto (<code>"castrante hasta para gente que has visto un día"</code>), la descartó sin pruebas como un montaje.</p></div>
+      </details>
+    </div>
+
+    <div class="nuke-zone" data-r>
+      <svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-nuke"/></svg>
+      <div><b>El Botón Nuclear</b><span>Abandona el grupo (11 veces en total). Pruébalo.</span></div>
+      <button class="btn danger" id="nukeBtn"><svg viewBox="0 0 24 24"><use href="#i-exit"/></svg>Salir del grupo <span class="cnt" id="fabCnt">0</span></button>
     </div>
   </div>
 </section>
@@ -1122,22 +1028,36 @@
 
 <footer>
   <div class="wrap">
-    <div class="cans" aria-hidden="true">
-      <button class="can-btn"><svg viewBox="0 0 60 112"><use href="#i-can"/></svg></button>
-      <button class="can-btn"><svg viewBox="0 0 60 112" style="--can-body:url(#gCanW);--claw:#3de1ff"><use href="#i-can"/></svg></button>
-      <button class="can-btn"><svg viewBox="0 0 60 112" style="--claw:#ffe81f"><use href="#i-can"/></svg></button>
-      <button class="can-btn"><svg viewBox="0 0 60 112" style="--claw:#ff3d5a"><use href="#i-can"/></svg></button>
-    </div>
+    <div class="foot-logos" aria-hidden="true"><img src="assets/img/monster.webp" alt=""><img src="assets/img/radler.webp" alt=""><img src="assets/img/helldivers.webp" alt=""><img src="assets/img/smite.webp" alt=""><img src="assets/img/mochila.webp" alt=""></div>
     <p>Expediente Forense de <em>El Puto Circo</em> · 21/05/2022 – 16/10/2026</p>
-    <p style="font-family:var(--f-mono);font-size:11px">Helldivers o me acuesto.</p>
+    <p class="mono">Helldivers o me acuesto.</p>
   </div>
 </footer>
 
-<button class="to-top" id="toTop" aria-label="Volver arriba"><svg viewBox="0 0 24 24"><use href="#i-up"/></svg></button>
-<button class="fab" id="fab" aria-label="Salir del grupo (broma)"><svg viewBox="0 0 24 24"><use href="#i-exit"/></svg>Salir del grupo <span class="cnt" id="fabCnt">0</span></button>
+<!-- barra inferior (móvil) -->
+<nav class="bottom-nav" aria-label="Secciones">
+  <a href="#inicio" data-nav="inicio"><svg viewBox="0 0 24 24"><use href="#n-home"/></svg><span>Inicio</span></a>
+  <a href="#timeline" data-nav="timeline"><svg viewBox="0 0 24 24"><use href="#n-timeline"/></svg><span>Timeline</span></a>
+  <a href="#incidentes" data-nav="incidentes"><svg viewBox="0 0 24 24"><use href="#n-list"/></svg><span>Incidentes</span></a>
+  <a href="#stats" data-nav="stats"><svg viewBox="0 0 24 24"><use href="#n-chart"/></svg><span>Stats</span></a>
+  <a href="#rivales" data-nav="rivales"><svg viewBox="0 0 24 24"><use href="#n-vs"/></svg><span>Rivales</span></a>
+  <a href="#gm" data-nav="gm"><svg viewBox="0 0 24 24"><use href="#n-user"/></svg><span>El GM</span></a>
+</nav>
+
+<!-- ficha (bottom sheet / modal) -->
+<div class="sheet" id="sheet" aria-hidden="true">
+  <div class="sheet-bg" data-close></div>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheet-grab" data-close></div>
+    <button class="icon-btn sheet-x" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24"><use href="#i-x"/></svg></button>
+    <div class="sheet-body" id="sheetBody"></div>
+  </div>
+</div>
+
 <div class="toasts" id="toasts" aria-live="polite"></div>
 
 <script src="js/data.js"></script>
+<script src="js/content.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
