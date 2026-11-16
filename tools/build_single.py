@@ -12,11 +12,11 @@ def js(name):
     return (root / "js" / name).read_text(encoding="utf-8").replace("</script", "<\\/script")
 
 html = html.replace('<link rel="stylesheet" href="css/styles.css">', "<style>\n" + css + "\n</style>")
-scripts = '<script src="js/data.js"></script>\n<script src="js/content.js"></script>\n<script src="js/main.js"></script>'
+scripts = '<script src="js/data.js"></script>\n<script src="js/content.js"></script>\n<script src="js/chats.js"></script>\n<script src="js/main.js"></script>'
 assert scripts in html
 # el mapa de imágenes va en una variable para no repetir los datos en cada <img>
 img_map = "window.GM_IMG = {" + ",".join(f'"{k}":"{v}"' for k, v in imgs.items()) + "};"
-inline = "<script>\n" + img_map + "\n" + js("data.js") + "\n" + js("content.js") + "\n</script>\n<script>\n" + js("main.js") + "\n</script>"
+inline = "<script>\n" + img_map + "\n" + js("data.js") + "\n" + js("content.js") + "\n" + js("chats.js") + "\n</script>\n<script>\n" + js("main.js") + "\n</script>"
 html = html.replace(scripts, "@@SCRIPTS@@")
 # <img src="assets/img/x.webp"> → data-img="x"; un script rellena el src desde GM_IMG
 html = re.sub(r'src="assets/img/([a-z0-9-]+)\.webp"', r'data-img="\1"', html)

@@ -8,14 +8,15 @@ Es una página estática (HTML + CSS + JS, sin compilación), pensada primero pa
 
 | Sección | Qué hay |
 | --- | --- |
-| **Inicio** | El caso en 10 segundos, accesos a cada sección, los 7 grandes episodios, el prólogo y la conclusión |
+| **Inicio** | El caso en 10 segundos, accesos a cada sección, los 7 grandes episodios, selección de perlas, el prólogo y la conclusión |
 | **Timeline** | Los 144 incidentes en orden, con exilios, episodios, la expulsión y el epílogo; mapa de calor por meses y filtros |
-| **Incidentes** | Glosario buscable con filtros por año, veredicto, rival y categoría; cada incidente abre su ficha |
+| **Incidentes** | Glosario buscable con filtros por año, veredicto, rival y categoría; cada incidente abre su ficha con fragmento real de WhatsApp |
+| **Perlas** | Galería filtrable de conversaciones graciosas, encuestas troll, madrugadas vampiro y folclore post-ban |
 | **Estadísticas** | Volumen de mensajes, récords, Hora Vampiro y "¿tenía razón?" |
-| **Rivales** | Mapa de rivalidades y ficha de cada integrante |
-| **El GM** | Gustos (Helldivers, Smite, Minecraft, Monster, radler…), apodos, Diccionario Perchita, el Ciclo y los 8 patrones |
+| **Rivales** | Mapa de rivalidades y ficha de cada integrante con su escena característica |
+| **El GM** | Gustos (Helldivers, Smite, Minecraft, Monster, radler…), apodos con su escena real, Diccionario Perchita con ejemplos, el Ciclo y los 8 patrones |
 
-Se puede enlazar directamente a una sección (`#timeline`), a un incidente (`#INC-077`) o a un episodio (`#EP-3`).
+Se puede enlazar directamente a una sección (`#timeline`, `#perlas`), a un incidente (`#INC-077`), a un episodio (`#EP-3`) o a una perla (`#PRL-05`).
 
 ## Ver la página
 
@@ -32,6 +33,7 @@ Se puede enlazar directamente a una sección (`#timeline`), a un incidente (`#IN
 | `js/main.js` | Navegación, timeline, catálogo, fichas y gráficos |
 | `js/data.js` | Los 144 incidentes, generados desde el `.md` (`python3 tools/build_data.py`) |
 | `js/content.js` | Los 7 grandes episodios y los hitos del timeline (texto literal del dossier) |
+| `js/chats.js` | Fragmentos reales de WhatsApp (144 incidentes, 7 episodios, 30 perlas, rivales, apodos, diccionario y patrones) |
 | `assets/img/` | Logos (Monster, radler, Helldivers 2, Smite, mochila de Minecraft) |
 | `tools/build_single.py` | Regenera `gm2-el-puto-circo.html` |
 | `tools/process_images.py` | Quita el fondo blanco a los logos y los exporta a webp |

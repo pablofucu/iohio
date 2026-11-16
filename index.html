@@ -288,6 +288,7 @@
   <symbol id="n-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
   <symbol id="n-timeline" viewBox="0 0 24 24"><path d="M6 3v18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="6" cy="7" r="2.4" fill="currentColor"/><circle cx="6" cy="17" r="2.4" fill="currentColor"/><path d="M11 7h9M11 17h6M11 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="n-list" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 9h10M7 13h10M7 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="n-pearls" viewBox="0 0 24 24"><path d="M4 5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 3v-3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 10h8M8 13.5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="n-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
   <symbol id="n-vs" viewBox="0 0 24 24"><path d="M4 4l9 9M4 4h4M4 4v4M20 4l-9 9M20 4h-4M20 4v4M7 15l-3 3 2 2 3-3M17 15l3 3-2 2-3-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="n-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
@@ -315,6 +316,7 @@
     <a href="#inicio" data-nav="inicio">Inicio</a>
     <a href="#timeline" data-nav="timeline">Timeline</a>
     <a href="#incidentes" data-nav="incidentes">Incidentes</a>
+    <a href="#perlas" data-nav="perlas">Perlas</a>
     <a href="#stats" data-nav="stats">Estadísticas</a>
     <a href="#rivales" data-nav="rivales">Rivales</a>
     <a href="#gm" data-nav="gm">El GM</a>
@@ -366,10 +368,11 @@
     <div class="block-head" data-r><h2>Explora el expediente</h2></div>
     <div class="explore">
       <a class="ex-card" href="#timeline" data-nav="timeline" data-r><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-timeline"/></svg></span><b>Timeline</b><span>Los 144 incidentes en orden, con exilios, episodios y el epílogo.</span><span class="ex-go">→</span></a>
-      <a class="ex-card" href="#incidentes" data-nav="incidentes" data-r style="--d:.05s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-list"/></svg></span><b>Incidentes</b><span>Glosario buscable: filtra por año, veredicto, rival o categoría.</span><span class="ex-go">→</span></a>
+      <a class="ex-card" href="#incidentes" data-nav="incidentes" data-r style="--d:.05s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-list"/></svg></span><b>Incidentes</b><span>Glosario buscable con chat real en los 144 incidentes: filtra por año, rival o veredicto.</span><span class="ex-go">→</span></a>
+      <a class="ex-card" href="#perlas" data-nav="perlas" data-r style="--d:.08s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-pearls"/></svg></span><b>Perlas del Chat</b><span>Galería de conversaciones graciosas, encuestas troll, zascas y surrealismo.</span><span class="ex-go">→</span></a>
       <a class="ex-card" href="#stats" data-nav="stats" data-r style="--d:.1s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-chart"/></svg></span><b>Estadísticas</b><span>Mensajes, récords, Hora Vampiro y el desplome del 9,7%.</span><span class="ex-go">→</span></a>
-      <a class="ex-card" href="#rivales" data-nav="rivales" data-r style="--d:.15s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-vs"/></svg></span><b>Rivales</b><span>Con quién se pelea, cuánto y cómo acabó cada relación.</span><span class="ex-go">→</span></a>
-      <a class="ex-card wide" href="#gm" data-nav="gm" data-r style="--d:.2s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-user"/></svg></span><b>El GM</b><span>Ficha del personaje: gustos, apodos, Diccionario Perchita, el Ciclo y los 8 patrones.</span><span class="ex-go">→</span>
+      <a class="ex-card" href="#rivales" data-nav="rivales" data-r style="--d:.15s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-vs"/></svg></span><b>Rivales</b><span>Con quién se pelea, cuánto, sus mejores enganchadas y cómo acabó cada relación.</span><span class="ex-go">→</span></a>
+      <a class="ex-card" href="#gm" data-nav="gm" data-r style="--d:.2s"><span class="ex-ic"><svg viewBox="0 0 24 24"><use href="#n-user"/></svg></span><b>El GM</b><span>Ficha del personaje: gustos, apodos, Diccionario Perchita, el Ciclo y los 8 patrones.</span><span class="ex-go">→</span>
         <span class="ex-logos" aria-hidden="true"><img src="assets/img/monster.webp" alt=""><img src="assets/img/helldivers.webp" alt=""><img src="assets/img/smite.webp" alt=""><img src="assets/img/mochila.webp" alt=""><img src="assets/img/radler.webp" alt=""></span></a>
     </div>
 
@@ -382,12 +385,12 @@
         <div class="chat-head"><div class="av"><img src="assets/img/monster.webp" alt=""></div><div><b>Se acabó la dictadura</b><small>21/05/2022 · 07:33</small></div></div>
         <div class="sys">Daniel Bruno creó el grupo "Pablo otako "</div>
         <div class="sys">Daniel Bruno cambió el nombre del grupo a "Se acabó la dictadura"</div>
-        <div class="bubble first" data-type style="--who:var(--acc-ink)"><span class="who">Daniel Bruno (El Prensas)</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body"><em>"Un nuevo y mejor grupo donde todos somos admin. Se acabó la dictadura de Pablo."</em> <span class="meta">07:34</span></span></div>
+        <div class="bubble out first" data-type style="--who:var(--c-dani)"><span class="who">Daniel Bruno (El Prensas)</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body">Un nuevo y mejor grupo donde todos somos admin. Se acabó la dictadura de Pablo.<span class="meta">07:34</span></span></div>
       </div>
       <div class="chat" data-r style="--d:.1s">
         <div class="chat-head"><div class="av"><img src="assets/img/mochila.webp" alt=""></div><div><b>El Puto Circo</b><small>23/09/2025 · 13:20</small></div></div>
-        <div class="bubble first" style="--who:#ffc93d"><span class="who">Votación · mod de mochilas</span>Pierde <b>0–5</b> (Rubén) y <b>0–6</b> (Fernando)</div>
-        <div class="bubble out first" data-type><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body"><em>"Al carajo."</em><span class="meta ticks">13:20</span></span></div>
+        <div class="bubble first" style="--who:var(--c-fernando)"><span class="who">Encuesta · mod de mochilas</span>Pierde <b>0–5</b> (Rubén) y <b>0–6</b> (Fernando)<span class="meta">23/09</span></div>
+        <div class="bubble out first" data-type style="--who:var(--c-edu)"><span class="who">Eduardo Merino</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body">Al carajo.<span class="meta ticks">13:20</span></span></div>
         <div class="sys"><code>Eduardo Merino (Amigo Ollega) quitó a Daniel Bruno (El Prensas)</code></div>
       </div>
     </div>
@@ -402,14 +405,14 @@
     <div class="chat" data-r>
       <div class="chat-head">
         <div class="av"><img src="assets/img/monster.webp" alt=""></div>
-        <div><b>Se acabó la dictadura</b><small>Daniel Bruno, tú</small></div>
+        <div><b>Se acabó la dictadura</b><small>21/05/2022 · 07:33</small></div>
       </div>
       <div class="sys">Daniel Bruno creó el grupo "Pablo otako "</div>
       <div class="sys">Daniel Bruno cambió el nombre del grupo a "Se acabó la dictadura"</div>
-      <div class="bubble first" data-type style="--who:var(--acc-ink)">
+      <div class="bubble out first" data-type style="--who:var(--c-dani)">
         <span class="who">Daniel Bruno (El Prensas)</span>
         <span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span class="bubble-body"><em>"Un nuevo y mejor grupo donde todos somos admin. Se acabó la dictadura de Pablo."</em> <span class="meta">(<code>21/05/2022 07:34</code>)</span></span>
+        <span class="bubble-body">Un nuevo y mejor grupo donde todos somos admin. Se acabó la dictadura de Pablo.<span class="meta">07:34</span></span>
       </div>
     </div>
 
@@ -417,13 +420,16 @@
 
 
     <div class="chat" data-r>
-      <div class="bubble out first" data-type><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body"><em>"Al carajo."</em><span class="meta ticks">13:20</span></span></div>
-      <div class="sys"><code>Eduardo Merino (Amigo Ollega) quitó a Daniel Bruno (El Prensas)</code> — <em>"Al carajo."</em></div>
+      <div class="bubble out first" data-type style="--who:var(--c-edu)"><span class="who">Eduardo Merino</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body">Al carajo.<span class="meta ticks">13:20</span></span></div>
+      <div class="sys"><code>Eduardo Merino (Amigo Ollega) quitó a Daniel Bruno (El Prensas)</code></div>
     </div>
 
     <p data-r>Lo que empezó como una cruzada libertaria contra la tiranía terminó con Daniel expulsado de forma permanente mientras todo el resto del grupo —incluidos los fichajes más recientes que ni siquiera habían vivido sus guerras de 2022— respiraba aliviado viendo caer los mensajes por minuto y votaba <strong>6 a 0</strong> en su contra. Este dossier es la autopsia estadística, lingüística, psicológica y criminalística de ese viaje legendario.</p>
       </div>
     </details>
+
+    <div class="block-head" data-r><h2>Selección de <em>Perlas del Chat</em></h2><p>Humor real sin filtros sacado de los 56.941 mensajes. <a href="#perlas" data-nav="perlas">Ver todas en la pestaña Perlas →</a></p></div>
+    <div class="pearls-grid" id="homePearls"></div>
 
     <div class="verdict-final" data-r>
       <span class="stamp" aria-hidden="true">BANEADO</span>
@@ -487,8 +493,11 @@
     </div>
 <div class="narrow" style="padding:0;margin-top:30px">
       <div class="chat" data-r>
-        <div class="bubble first" style="--who:#9dff00"><span class="who">Eduardo Merino · 08/03/2026</span>Dile que luego amaina</div>
-        <div class="bubble first" style="--who:#ffc93d" data-type><span class="who">Alejandro Manzano</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body">Perchita se ha rajado</span></div>
+        <div class="chat-head"><div class="av"><img src="assets/img/monster.webp" alt=""></div><div><b>El Puto Circo</b><small>08/03/2026 · La última profecía</small></div></div>
+        <div class="bubble first" style="--who:var(--c-pablo)"><span class="who">Pablo Valderas</span>Lo sorprendente es que esté despierto ahora<span class="meta">16:17</span></div>
+        <div class="bubble first" style="--who:var(--c-julian)"><span class="who">Julián</span>Si la quedada es en 3 horas y pico<span class="meta">16:26</span></div>
+        <div class="bubble first" style="--who:var(--c-edu)"><span class="who">Eduardo Merino</span>Dile que luego amaina<span class="meta">16:27</span></div>
+        <div class="bubble out first" style="--who:var(--c-ale)" data-type><span class="who">Alejandro Manzano</span><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bubble-body">Perchita se ha rajado<span class="meta ticks">19:37</span></span></div>
       </div>
     </div>
       <div class="monument" id="monument">
@@ -521,6 +530,29 @@
       <div class="cat-count"><span>Mostrando <b id="shown">144</b> de 144</span><span class="cc-actions"><button class="btn-ghost sm" id="clearF">Limpiar</button><button class="btn-ghost sm" id="randomInc"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-dice"/></svg>Aleatorio</button></span></div>
     </div>
     <div id="incidents"></div>
+  </div>
+</section>
+
+<!-- ======================================================
+     PERLAS DE HUMOR
+     ====================================================== -->
+<section class="view" data-view="perlas" id="v-perlas" hidden>
+  <div class="wrap">
+    <div class="view-head">
+      <span class="view-kicker">Humor, Lore y Surrealismo · 2022 – 2026</span>
+      <h2>Perlas del chat</h2>
+      <p>Conversaciones reales sacadas del historial: troleos, encuestas troll, respuestas surrealistas de madrugada y memes eternos del GM fuera de los incidentes.</p>
+    </div>
+    <div class="cat-controls">
+      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"/></svg><input type="search" id="pearlQ" placeholder="Kaede, prensas, ChatGPT, madrugada, Helldivers…" autocomplete="off" aria-label="Buscar perlas"></label>
+      <div class="filters" id="pearlCats" role="group" aria-label="Categorías de perlas"></div>
+      <div class="filter-row2">
+        <select id="pearlWho" aria-label="Filtrar por participante"><option value="">Todos los protagonistas</option></select>
+        <div></div><div></div>
+      </div>
+      <div class="cat-count"><span>Mostrando <b id="pearlShown">0</b> de <b id="pearlTotal">0</b> perlas</span><span class="cc-actions"><button class="btn-ghost sm" id="pearlClear">Limpiar</button><button class="btn-ghost sm" id="pearlRandom"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-dice"/></svg>Aleatoria</button></span></div>
+    </div>
+    <div class="pearls-grid" id="pearlsGrid"></div>
   </div>
 </section>
 
@@ -916,19 +948,19 @@
     </div>
 
     <details class="more" data-r><summary><span>Ver el diccionario completo · 13 expresiones</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><div class="dict" id="dict">
-      <article class="dict-entry" data-word="q"atio="138.6"><h5><span><strong><code>q</code></strong> <em>(vs <code>que</code>)</em></span><span class="ratio-b">138,6x</span></h5><p class="fn">Ahorro de energía vital entre ráfaga y ráfaga</p><div class="row"><span>Usos de Dani: <b>1.733</b></span><span>Tasa Dani (/1k msgs): <b>151,04</b></span><span>Usos Resto Grupo: <b>40</b></span><span>Ratio: <b>138,6x</b></span></div></article>
-      <article class="dict-entry" data-word="porq / por q"atio="inf"><h5><span><strong><code>porq</code> / <code>por q</code></strong></span><span class="ratio-b">∞ (Exclusiva)</span></h5><p class="fn">Justificación defensiva instantánea</p><div class="row"><span>Usos de Dani: <b>192</b></span><span>Tasa Dani (/1k msgs): <b>16,73</b></span><span>Usos Resto Grupo: <b>0</b></span><span>Ratio: <b>∞ (Exclusiva)</b></span></div></article>
-      <article class="dict-entry" data-word="chavales"atio="14.2"><h5><span><strong><code>chavales</code></strong></span><span class="ratio-b">14,2x</span></h5><p class="fn">Llamada a filas antes de proponer plan o quejarse</p><div class="row"><span>Usos de Dani: <b>359</b> <em>(317 solo)</em></span><span>Tasa Dani (/1k msgs): <b>31,29</b></span><span>Usos Resto Grupo: <b>81</b></span><span>Ratio: <b>14,2x</b></span></div></article>
-      <article class="dict-entry" data-word="xd / xdddddd..."atio="3.2"><h5><span><strong><code>xd</code> / <code>xdddddd...</code></strong></span><span class="ratio-b">3,2x</span></h5><p class="fn">Risa pasivo-agresiva; la longitud de <code>d</code> mide el nivel de picor</p><div class="row"><span>Usos de Dani: <b>576</b></span><span>Tasa Dani (/1k msgs): <b>50,20</b></span><span>Usos Resto Grupo: <b>581</b></span><span>Ratio: <b>3,2x</b></span></div></article>
-      <article class="dict-entry" data-word="Ataques oro-genitales*"atio="3.5"><h5><span><strong>Ataques oro-genitales*</strong></span><span class="ratio-b">3,5x</span></h5><p class="fn">Cierre de debate cuando se queda sin argumentos (<code>chúpala</code>, <code>cómeme un huevo/cipote/ojete</code>)</p><div class="row"><span>Usos de Dani: <b>216</b></span><span>Tasa Dani (/1k msgs): <b>18,82</b></span><span>Usos Resto Grupo: <b>200</b></span><span>Ratio: <b>3,5x</b></span></div></article>
-      <article class="dict-entry" data-word="chupala"atio="16.7"><h5><span><strong><code>chupala</code></strong></span><span class="ratio-b">16,7x</span></h5><p class="fn">Respuesta automática universal a cualquier réplica</p><div class="row"><span>Usos de Dani: <b>88</b> <em>(63 solo)</em></span><span>Tasa Dani (/1k msgs): <b>7,67</b></span><span>Usos Resto Grupo: <b>17</b></span><span>Ratio: <b>16,7x</b></span></div></article>
-      <article class="dict-entry" data-word="aro"atio="5.9"><h5><span><strong><code>aro</code></strong> <em>(por <code>claro</code>)</em></span><span class="ratio-b">5,9x</span></h5><p class="fn">Sarcasmo seco o confirmación condescendiente</p><div class="row"><span>Usos de Dani: <b>83</b> <em>(63 solo)</em></span><span>Tasa Dani (/1k msgs): <b>7,23</b></span><span>Usos Resto Grupo: <b>45</b></span><span>Ratio: <b>5,9x</b></span></div></article>
-      <article class="dict-entry" data-word="terrible"atio="12.6"><h5><span><strong><code>terrible</code></strong></span><span class="ratio-b">12,6x</span></h5><p class="fn">Sentencia dramática sobre cualquier contratiempo menor</p><div class="row"><span>Usos de Dani: <b>62</b> <em>(41 solo)</em></span><span>Tasa Dani (/1k msgs): <b>5,40</b></span><span>Usos Resto Grupo: <b>16</b></span><span>Ratio: <b>12,6x</b></span></div></article>
-      <article class="dict-entry" data-word="mentira"atio="4.2"><h5><span><strong><code>mentira</code></strong></span><span class="ratio-b">4,2x</span></h5><p class="fn">Negar capturas, horarios o recuerdos ajenos sin aportar pruebas</p><div class="row"><span>Usos de Dani: <b>39</b> <em>(26 solo)</em></span><span>Tasa Dani (/1k msgs): <b>3,40</b></span><span>Usos Resto Grupo: <b>30</b></span><span>Ratio: <b>4,2x</b></span></div></article>
-      <article class="dict-entry" data-word="discrepo"atio="45.4"><h5><span><strong><code>discrepo</code></strong></span><span class="ratio-b">45,4x</span></h5><p class="fn">Escudo pseudo-culto justo antes de soltar una barbaridad</p><div class="row"><span>Usos de Dani: <b>26</b> <em>(22 solo)</em></span><span>Tasa Dani (/1k msgs): <b>2,27</b></span><span>Usos Resto Grupo: <b>2</b></span><span>Ratio: <b>45,4x</b></span></div></article>
-      <article class="dict-entry" data-word="evidentemente"atio="24.0"><h5><span><strong><code>evidentemente</code></strong></span><span class="ratio-b">24,0x</span></h5><p class="fn">Presentar su opinión subjetiva como axioma físico indiscutible</p><div class="row"><span>Usos de Dani: <b>22</b></span><span>Tasa Dani (/1k msgs): <b>1,92</b></span><span>Usos Resto Grupo: <b>3</b></span><span>Ratio: <b>24,0x</b></span></div></article>
-      <article class="dict-entry" data-word="subnormal"atio="3.3"><h5><span><strong><code>subnormal</code></strong></span><span class="ratio-b">3,3x</span></h5><p class="fn">Comodín insultante favorito (Edu: <em>"Tiene dos frases y una es decir subnormal"</em>)</p><div class="row"><span>Usos de Dani: <b>28</b></span><span>Tasa Dani (/1k msgs): <b>2,44</b></span><span>Usos Resto Grupo: <b>27</b></span><span>Ratio: <b>3,3x</b></span></div></article>
-      <article class="dict-entry" data-word="ameisin"atio="48.2"><h5><span><strong><code>ameisin</code></strong></span><span class="ratio-b">48,2x</span></h5><p class="fn">Ironía bilingüe deformada cuando algo le parece lamentable</p><div class="row"><span>Usos de Dani: <b>15</b></span><span>Tasa Dani (/1k msgs): <b>1,31</b></span><span>Usos Resto Grupo: <b>1</b></span><span>Ratio: <b>48,2x</b></span></div></article>
+      <article class="dict-entry" data-word="q" data-ratio="138.6"><h5><span><strong><code>q</code></strong> <em>(vs <code>que</code>)</em></span><span class="ratio-b">138,6x</span></h5><p class="fn">Ahorro de energía vital entre ráfaga y ráfaga</p><div class="row"><span>Usos de Dani: <b>1.733</b></span><span>Tasa Dani (/1k msgs): <b>151,04</b></span><span>Usos Resto Grupo: <b>40</b></span><span>Ratio: <b>138,6x</b></span></div></article>
+      <article class="dict-entry" data-word="porq / por q" data-ratio="inf"><h5><span><strong><code>porq</code> / <code>por q</code></strong></span><span class="ratio-b">∞ (Exclusiva)</span></h5><p class="fn">Justificación defensiva instantánea</p><div class="row"><span>Usos de Dani: <b>192</b></span><span>Tasa Dani (/1k msgs): <b>16,73</b></span><span>Usos Resto Grupo: <b>0</b></span><span>Ratio: <b>∞ (Exclusiva)</b></span></div></article>
+      <article class="dict-entry" data-word="chavales" data-ratio="14.2"><h5><span><strong><code>chavales</code></strong></span><span class="ratio-b">14,2x</span></h5><p class="fn">Llamada a filas antes de proponer plan o quejarse</p><div class="row"><span>Usos de Dani: <b>359</b> <em>(317 solo)</em></span><span>Tasa Dani (/1k msgs): <b>31,29</b></span><span>Usos Resto Grupo: <b>81</b></span><span>Ratio: <b>14,2x</b></span></div></article>
+      <article class="dict-entry" data-word="xd / xdddddd..." data-ratio="3.2"><h5><span><strong><code>xd</code> / <code>xdddddd...</code></strong></span><span class="ratio-b">3,2x</span></h5><p class="fn">Risa pasivo-agresiva; la longitud de <code>d</code> mide el nivel de picor</p><div class="row"><span>Usos de Dani: <b>576</b></span><span>Tasa Dani (/1k msgs): <b>50,20</b></span><span>Usos Resto Grupo: <b>581</b></span><span>Ratio: <b>3,2x</b></span></div></article>
+      <article class="dict-entry" data-word="Ataques oro-genitales*" data-ratio="3.5"><h5><span><strong>Ataques oro-genitales*</strong></span><span class="ratio-b">3,5x</span></h5><p class="fn">Cierre de debate cuando se queda sin argumentos (<code>chúpala</code>, <code>cómeme un huevo/cipote/ojete</code>)</p><div class="row"><span>Usos de Dani: <b>216</b></span><span>Tasa Dani (/1k msgs): <b>18,82</b></span><span>Usos Resto Grupo: <b>200</b></span><span>Ratio: <b>3,5x</b></span></div></article>
+      <article class="dict-entry" data-word="chupala" data-ratio="16.7"><h5><span><strong><code>chupala</code></strong></span><span class="ratio-b">16,7x</span></h5><p class="fn">Respuesta automática universal a cualquier réplica</p><div class="row"><span>Usos de Dani: <b>88</b> <em>(63 solo)</em></span><span>Tasa Dani (/1k msgs): <b>7,67</b></span><span>Usos Resto Grupo: <b>17</b></span><span>Ratio: <b>16,7x</b></span></div></article>
+      <article class="dict-entry" data-word="aro" data-ratio="5.9"><h5><span><strong><code>aro</code></strong> <em>(por <code>claro</code>)</em></span><span class="ratio-b">5,9x</span></h5><p class="fn">Sarcasmo seco o confirmación condescendiente</p><div class="row"><span>Usos de Dani: <b>83</b> <em>(63 solo)</em></span><span>Tasa Dani (/1k msgs): <b>7,23</b></span><span>Usos Resto Grupo: <b>45</b></span><span>Ratio: <b>5,9x</b></span></div></article>
+      <article class="dict-entry" data-word="terrible" data-ratio="12.6"><h5><span><strong><code>terrible</code></strong></span><span class="ratio-b">12,6x</span></h5><p class="fn">Sentencia dramática sobre cualquier contratiempo menor</p><div class="row"><span>Usos de Dani: <b>62</b> <em>(41 solo)</em></span><span>Tasa Dani (/1k msgs): <b>5,40</b></span><span>Usos Resto Grupo: <b>16</b></span><span>Ratio: <b>12,6x</b></span></div></article>
+      <article class="dict-entry" data-word="mentira" data-ratio="4.2"><h5><span><strong><code>mentira</code></strong></span><span class="ratio-b">4,2x</span></h5><p class="fn">Negar capturas, horarios o recuerdos ajenos sin aportar pruebas</p><div class="row"><span>Usos de Dani: <b>39</b> <em>(26 solo)</em></span><span>Tasa Dani (/1k msgs): <b>3,40</b></span><span>Usos Resto Grupo: <b>30</b></span><span>Ratio: <b>4,2x</b></span></div></article>
+      <article class="dict-entry" data-word="discrepo" data-ratio="45.4"><h5><span><strong><code>discrepo</code></strong></span><span class="ratio-b">45,4x</span></h5><p class="fn">Escudo pseudo-culto justo antes de soltar una barbaridad</p><div class="row"><span>Usos de Dani: <b>26</b> <em>(22 solo)</em></span><span>Tasa Dani (/1k msgs): <b>2,27</b></span><span>Usos Resto Grupo: <b>2</b></span><span>Ratio: <b>45,4x</b></span></div></article>
+      <article class="dict-entry" data-word="evidentemente" data-ratio="24.0"><h5><span><strong><code>evidentemente</code></strong></span><span class="ratio-b">24,0x</span></h5><p class="fn">Presentar su opinión subjetiva como axioma físico indiscutible</p><div class="row"><span>Usos de Dani: <b>22</b></span><span>Tasa Dani (/1k msgs): <b>1,92</b></span><span>Usos Resto Grupo: <b>3</b></span><span>Ratio: <b>24,0x</b></span></div></article>
+      <article class="dict-entry" data-word="subnormal" data-ratio="3.3"><h5><span><strong><code>subnormal</code></strong></span><span class="ratio-b">3,3x</span></h5><p class="fn">Comodín insultante favorito (Edu: <em>"Tiene dos frases y una es decir subnormal"</em>)</p><div class="row"><span>Usos de Dani: <b>28</b></span><span>Tasa Dani (/1k msgs): <b>2,44</b></span><span>Usos Resto Grupo: <b>27</b></span><span>Ratio: <b>3,3x</b></span></div></article>
+      <article class="dict-entry" data-word="ameisin" data-ratio="48.2"><h5><span><strong><code>ameisin</code></strong></span><span class="ratio-b">48,2x</span></h5><p class="fn">Ironía bilingüe deformada cuando algo le parece lamentable</p><div class="row"><span>Usos de Dani: <b>15</b></span><span>Tasa Dani (/1k msgs): <b>1,31</b></span><span>Usos Resto Grupo: <b>1</b></span><span>Ratio: <b>48,2x</b></span></div></article>
     </div>
     <p class="footnote narrow" style="padding:0"><em>*Incluye <code>chúpala</code>, <code>cómeme un huevo/los huevos/la polla/el cipote/el ojete</code>, <code>lámeme las bolas</code>, <code>me comes un nabo</code> y variantes.</em></p></div></details>
 
@@ -952,11 +984,16 @@
     </div>
     <div class="narrow" style="padding:0">
       <div class="chat" data-r>
-        <div class="bubble first" style="--who:#ffc93d"><span class="who">Pablo Valderas · 17/04/2025</span>Si suena siempre igual<span class="meta"></span></div>
-        <div class="bubble">No sé le ha pillado nunca el sarcasmo</div>
-        <div class="bubble out first">Era todo ironía, subnormal<span class="meta">10/02/2025</span></div>
+        <div class="chat-head"><div class="av"><img src="assets/img/monster.webp" alt=""></div><div><b>El Puto Circo</b><small>Dos escenas reales del enigma</small></div></div>
+        <div class="chat-date">10 feb 2025</div>
+        <div class="bubble out first" style="--who:var(--c-dani)"><span class="who">Daniel Bruno (El Prensas)</span>Te lo voy a explicar porq veo q eres subnormal<span class="meta ticks">21:31</span></div>
+        <div class="bubble out" style="--who:var(--c-dani)">Era todo ironía<span class="meta ticks">21:31</span></div>
+        <div class="bubble first" style="--who:var(--c-julian)"><span class="who">Julián</span>Pues tienes razón, no lo había pillado<span class="meta">21:31</span></div>
+        <div class="chat-date">17 abr 2025</div>
+        <div class="bubble first" style="--who:var(--c-pablo)"><span class="who">Pablo Valderas</span>Si suena siempre igual<span class="meta">19:02</span></div>
+        <div class="bubble">No sé le ha pillado nunca el sarcasmo<span class="meta">19:02</span></div>
       </div>
-      <p data-r><strong>El Enigma del Sarcasmo:</strong> Como resumió Pablo el <code>17/04/2025</code> (<code>"Si suena siempre igual / No sé le ha pillado nunca el sarcasmo"</code>), Daniel dice exactamente con las mismas palabras y la misma ausencia de emojis tanto sus bromas como sus cabreos reales —y, cuando le pillan pasándose de la raya (como el <code>10/02/2025</code> con el senderismo), saca el comodín de <em>"Era todo ironía, subnormal"</em>.</p>
+      <p data-r><strong>El Enigma del Sarcasmo:</strong> Como resumió Pablo el <code>17/04/2025</code> (<code>"Si suena siempre igual / No sé le ha pillado nunca el sarcasmo"</code>), Daniel dice exactamente con las mismas palabras y la misma ausencia de emojis tanto sus bromas como sus cabreos reales —y, cuando le pillan pasándose de la raya (como el <code>10/02/2025</code> con el senderismo), saca el comodín de <em>"Era todo ironía"</em> tras llamar <code>"subnormal"</code> al receptor.</p>
     </div>
 
     <h3 class="sec" id="g-ciclo" data-r><span class="n">IV</span>Los 8 Patrones Repetitivos del <em>Ciclo Perchita</em></h3>
@@ -1039,6 +1076,7 @@
   <a href="#inicio" data-nav="inicio"><svg viewBox="0 0 24 24"><use href="#n-home"/></svg><span>Inicio</span></a>
   <a href="#timeline" data-nav="timeline"><svg viewBox="0 0 24 24"><use href="#n-timeline"/></svg><span>Timeline</span></a>
   <a href="#incidentes" data-nav="incidentes"><svg viewBox="0 0 24 24"><use href="#n-list"/></svg><span>Incidentes</span></a>
+  <a href="#perlas" data-nav="perlas"><svg viewBox="0 0 24 24"><use href="#n-pearls"/></svg><span>Perlas</span></a>
   <a href="#stats" data-nav="stats"><svg viewBox="0 0 24 24"><use href="#n-chart"/></svg><span>Stats</span></a>
   <a href="#rivales" data-nav="rivales"><svg viewBox="0 0 24 24"><use href="#n-vs"/></svg><span>Rivales</span></a>
   <a href="#gm" data-nav="gm"><svg viewBox="0 0 24 24"><use href="#n-user"/></svg><span>El GM</span></a>
@@ -1058,6 +1096,7 @@
 
 <script src="js/data.js"></script>
 <script src="js/content.js"></script>
+<script src="js/chats.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

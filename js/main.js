@@ -37,8 +37,68 @@
   const BYID = Object.fromEntries(ALL.map((i, k) => [i.id, { ...i, k }]));
   const EPISODES = window.EPISODES || [];
   const EVENTS = window.EVENTS || [];
+  const CHATS = window.CHATS || { incidents: {}, episodes: {}, pearls: [], rivals: {}, nicknames: {}, dict: {}, patterns: [] };
   const RIVAL = { PABLO: "Pablo", ALE: "Ale", JULIAN: "Julián", EDU: "Edu", ANTONIO: "Antonio", FERNANDO: "Fernando", RUBEN: "Rubén" };
   const VTXT = { S: "🟢 Sí", P: "🟡 Parcialmente", N: "🔴 No" };
+  const WHO_META = {
+    Dani:     { name: "Daniel Bruno (El Prensas)", c: "var(--c-dani)" },
+    Pablo:    { name: "Pablo Valderas",            c: "var(--c-pablo)" },
+    Ale:      { name: "Alejandro Manzano",         c: "var(--c-ale)" },
+    Julian:   { name: "Julián (Gigasimp)",         c: "var(--c-julian)" },
+    Edu:      { name: "Eduardo Merino",            c: "var(--c-edu)" },
+    Antonio:  { name: "Antonio García",            c: "var(--c-antonio)" },
+    Fernando: { name: "Fernando",                  c: "var(--c-fernando)" },
+    Ruben:    { name: "Rubén Moya",                c: "var(--c-ruben)" },
+  };
+  const renderChat = (spec, opts = {}) => {
+    if (!spec || (!spec.msgs?.length && !spec.more?.length)) return "";
+    const outTarget = spec.out ?? opts.out ?? "Dani";
+    const head = opts.head ?? spec.head ?? "El Puto Circo";
+    const sub = opts.sub ?? spec.sub ?? "";
+    const icon = opts.icon ?? spec.icon ?? "monster";
+    const renderMsgs = (list, state = { d: "", w: "", out: null }) => (list || []).map((m) => {
+      let chunk = "";
+      if (m.d && m.d !== state.d) {
+        state.d = m.d; state.w = "";
+        chunk += `<div class="chat-date">${esc(m.d)}</div>`;
+      }
+      if (m.w === "SYS") {
+        state.w = "";
+        return chunk + `<div class="sys">${esc(m.m)}${m.t ? ` · <code>${esc(m.t)}</code>` : ""}</div>`;
+      }
+      const meta = WHO_META[m.w] || { name: m.w || "Grupo", c: "var(--acc-ink)" };
+      const isOut = !!(m.out || (Array.isArray(outTarget) ? outTarget.includes(m.id) : outTarget === m.w));
+      const isFirst = m.w !== state.w || isOut !== state.out;
+      state.w = m.w; state.out = isOut;
+      let inner = "";
+      if (isFirst) inner += `<span class="who">${esc(meta.name)}</span>`;
+      if (m.q) {
+        const qm = WHO_META[m.q.w] || { name: m.q.w || "Grupo", c: "var(--acc-ink)" };
+        inner += `<div class="wa-reply" style="--rc:${qm.c}"><b>${esc(qm.name)}</b><span>${esc(m.q.m)}</span></div>`;
+      }
+      if (m.poll) {
+        const maxV = Math.max(1, ...m.poll.opts.map((o) => o[1]));
+        inner += `<div class="wa-poll"><div class="wa-poll-tag">📊 Encuesta</div><div class="wa-poll-q">${esc(m.poll.q)}</div><div class="wa-poll-opts">` +
+          m.poll.opts.map(([txt, v]) => `<div class="wa-poll-opt${v === maxV && v > 0 ? " win" : ""}"><span class="wa-poll-bar" style="width:${(v / maxV) * 100}%"></span><span>${esc(txt)}</span><b>${v} voto${v === 1 ? "" : "s"}</b></div>`).join("") +
+          `</div></div>`;
+      } else {
+        if (m.med) inner += `<div class="wa-media">${esc(m.med)}</div>`;
+        if (m.del) inner += `🚫 Se eliminó este mensaje`;
+        else if (m.m) inner += (m.med ? `<div style="margin-top:4px">${esc(m.m).replace(/\n/g, "<br>")}</div>` : esc(m.m).replace(/\n/g, "<br>"));
+      }
+      inner += `<span class="meta${isOut ? " ticks" : ""}">${m.ed ? `<span class="edited">editado</span>` : ""}${esc(m.t || "")}</span>`;
+      return chunk + `<div class="bubble${isOut ? " out" : ""}${isFirst ? " first" : ""}${m.del ? " deleted" : ""}" style="--who:${meta.c}">${inner}</div>`;
+    }).join("");
+    const st = { d: "", w: "", out: null };
+    const mainHtml = renderMsgs(spec.msgs || [], st);
+    const fullHtml = spec.full && spec.full.length
+      ? `<details class="more inline chat-more"><summary><span>Ver escena completa en orden (${spec.full.length} mensajes)</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><div class="chat">${renderMsgs(spec.full, { d: "", w: "", out: null })}</div></div></details>`
+      : "";
+    const moreHtml = !fullHtml && spec.more && spec.more.length
+      ? `<details class="more inline chat-more"><summary><span>Ver escena completa (+${spec.more.length} mensajes)</span><span class="pm" aria-hidden="true"></span></summary><div class="more-body"><div class="chat">${renderMsgs(spec.more, st)}</div></div></details>`
+      : "";
+    return `<div class="chat-wrap"><div class="chat">${head ? `<div class="chat-head"><div class="av"><img src="${IMG(icon)}" alt=""></div><div><b>${esc(head)}</b>${sub ? `<small>${esc(sub)}</small>` : ""}</div></div>` : ""}${mainHtml}</div>${fullHtml || moreHtml}</div>`;
+  };
   const EP_OF = {};
   EPISODES.forEach((e, n) => e.incs.forEach((id) => (EP_OF[id] = n)));
   const groupShort = (t) => t.replace(/\s*\(INC-\d+ a INC-\d+\).*$/, "");
@@ -112,7 +172,7 @@
   $$(".can-btn").forEach((b) => b.addEventListener("click", (e) => openCan(e, b)));
 
   /* ---------------- ROUTER ---------------- */
-  const VIEWS = ["inicio", "timeline", "incidentes", "stats", "rivales", "gm"];
+  const VIEWS = ["inicio", "timeline", "incidentes", "perlas", "stats", "rivales", "gm"];
   let current = null;
   const inited = {};
   const showView = (name, { scroll = true } = {}) => {
@@ -130,6 +190,12 @@
     const h = decodeURIComponent(location.hash.slice(1));
     if (/^INC-\d{3}$/.test(h)) { if (!current) showView("inicio"); openIncident(h, false); return; }
     if (/^EP-\d$/.test(h)) { if (!current) showView("inicio"); openEpisode(+h.slice(3) - 1, false); return; }
+    if (/^PRL-\d+$/.test(h)) {
+      closeSheet(false);
+      showView("perlas", { scroll: false });
+      setTimeout(() => { const el = document.getElementById(h); if (el) el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" }); }, 60);
+      return;
+    }
     closeSheet(false);
     showView(h || "inicio");
   };
@@ -197,6 +263,8 @@
     const ep = epN !== undefined ? EPISODES[epN] : null;
     const prev = ALL[i.k - 1], next = ALL[i.k + 1];
     const rivals = i.all.map((r) => RIVAL[r]).filter(Boolean);
+    const chat = CHATS.incidents?.[id];
+    const chatHtml = chat ? `<p class="sh-label">Fragmento real de WhatsApp</p><div class="sh-chat">${renderChat(chat, { head: chat.head || "El Puto Circo", sub: `${fdate(i.date)} · ${i.id}`, icon: logo ? logo[1] : "monster" })}</div>` : "";
     sheetBody.innerHTML = `
       <article class="sh v-${i.v}">
         <div class="sh-top"><span class="sh-id">${i.id}</span><span class="sh-date">${fdate(i.date)} · <code>${i.date}</code></span><span class="sh-verdict">¿Tenía razón? ${VTXT[i.v]}</span></div>
@@ -209,6 +277,7 @@
         </dl>
         <p class="sh-label">Qué Pasó (Resumen Forense)</p>
         <p class="sh-desc">${esc(i.desc)}</p>
+        ${chatHtml}
         ${ep ? `<p class="sh-label">Forma parte de un gran episodio</p><div class="sh-ep"><b>★ Episodio ${epN + 1}: ${ep.title}</b>${ep.date}<div class="sh-links"><button class="btn-ghost sm" data-ep="${epN}">Leer el episodio →</button></div></div>` : ""}
         <div class="sh-links">
           <button class="btn-ghost sm" data-tl="${i.id}">Ver en el timeline</button>
@@ -231,6 +300,8 @@
     const e = EPISODES[n]; if (!e) return;
     delete sheetBody.dataset.id;
     const img = e.img ? `<img class="sh-logo" src="${IMG(e.img)}" alt="">` : `<svg class="sh-logo" viewBox="0 0 100 100"><use href="#${e.art}"/></svg>`;
+    const epChat = CHATS.episodes?.["EP-" + (n + 1)] || CHATS.episodes?.[n];
+    const epChatHtml = epChat ? `<p class="sh-label">Escena real de WhatsApp</p><div class="sh-chat">${renderChat(epChat, { head: e.title.replace(/<[^>]+>/g, ""), sub: fdate(e.start), icon: e.img || "monster" })}</div>` : "";
     sheetBody.innerHTML = `
       <article class="sh v-P sh-ep-full">
         <div class="sh-top"><span class="sh-id">★ ${esc(e.num)}</span></div>
@@ -238,6 +309,7 @@
         ${img}
         <div class="sh-date" style="margin-bottom:12px">${e.date}</div>
         <p>${e.html}</p>
+        ${epChatHtml}
         <p class="sh-label">Incidentes del episodio</p>
         <div class="sh-incs">${e.incs.map((id) => `<button class="btn-ghost sm" data-inc="${id}">${id} · ${esc(BYID[id].name.slice(0, 34))}${BYID[id].name.length > 34 ? "…" : ""}</button>`).join("")}</div>
         <div class="sh-nav">
@@ -283,6 +355,12 @@
         <span class="ep-d">${fdate(e.start)}${e.end !== e.start ? " → " + fdate(e.end) : ""} · ${e.incs.length} incidente${e.incs.length > 1 ? "s" : ""}</span>
         <span class="ep-more">Leer episodio →</span>
       </button>`).join("");
+    const hp = $("#homePearls"), pearls = CHATS.pearls || [];
+    if (hp && pearls.length) {
+      const picks = pearls.filter((p) => p.featured).slice(0, 4);
+      const showP = picks.length ? picks : pearls.slice(0, 4);
+      hp.innerHTML = showP.map((p) => `<article class="pearl-card"><div class="pearl-top"><span class="pearl-cat">${esc(p.cat)}</span><span class="pearl-date">${esc(p.date || "")}</span></div><h4>${esc(p.title)}</h4><p class="pearl-cap">${esc(p.caption)}</p>${renderChat(p.chat, { head: p.head || "El Puto Circo", sub: p.sub || p.date || "", icon: p.icon || "monster" })}</article>`).join("");
+    }
   };
   // parallax del hero
   (() => {
@@ -435,6 +513,50 @@
   INIT.incidentes = () => { CAT.build(); CAT.render(); };
 
   /* ======================================================
+     PERLAS DE HUMOR
+     ====================================================== */
+  INIT.perlas = () => {
+    const pearls = CHATS.pearls || [];
+    const catsEl = $("#pearlCats"), whoEl = $("#pearlWho"), qEl = $("#pearlQ"), grid = $("#pearlsGrid");
+    const st = { cat: "", who: "", q: "" };
+    const cats = [...new Set(pearls.map((p) => p.cat))];
+    catsEl.innerHTML = `<button class="chip" data-c="" aria-pressed="true">Todas (${pearls.length})</button>` +
+      cats.map((c) => `<button class="chip" data-c="${esc(c)}" aria-pressed="false">${esc(c)} (${pearls.filter((p) => p.cat === c).length})</button>`).join("");
+    Object.entries(WHO_META).forEach(([k, v]) => whoEl.insertAdjacentHTML("beforeend", `<option value="${k}">Con ${esc(v.name.split(" (")[0])}</option>`));
+    $("#pearlTotal").textContent = pearls.length;
+    const render = () => {
+      $$("#pearlCats .chip").forEach((b) => b.setAttribute("aria-pressed", b.dataset.c === st.cat));
+      whoEl.value = st.who; qEl.value = st.q;
+      const qq = norm(st.q.trim());
+      const list = pearls.filter((p) => {
+        if (st.cat && p.cat !== st.cat) return false;
+        const allM = [...(p.chat?.msgs || []), ...(p.chat?.more || [])];
+        if (st.who && !allM.some((m) => m.w === st.who)) return false;
+        if (qq) {
+          const hay = norm([p.title, p.caption, p.cat, ...allM.map((m) => (m.w || "") + " " + (m.m || ""))].join(" "));
+          if (!hay.includes(qq)) return false;
+        }
+        return true;
+      });
+      $("#pearlShown").textContent = list.length;
+      grid.innerHTML = list.length ? list.map((p) => `<article class="pearl-card${p.wide ? " wide" : ""}" id="${esc(p.id)}"><div class="pearl-top"><span class="pearl-cat">${esc(p.cat)}</span><span class="pearl-date">${esc(p.date || "")}</span></div><h4>${esc(p.title)}</h4><p class="pearl-cap">${esc(p.caption)}</p>${renderChat(p.chat, { head: p.head || "El Puto Circo", sub: p.sub || p.date || "", icon: p.icon || "monster" })}${p.inc ? `<div><button class="btn-ghost sm" data-inc="${esc(p.inc)}">Ver ficha ${esc(p.inc)} →</button></div>` : ""}</article>`).join("") : `<div class="empty">Ninguna perla con ese filtro.<br><em>"Aro."</em></div>`;
+    };
+    catsEl.addEventListener("click", (e) => { const c = e.target.closest(".chip"); if (c) { st.cat = c.dataset.c; render(); } });
+    whoEl.addEventListener("change", (e) => { st.who = e.target.value; render(); });
+    let pt; qEl.addEventListener("input", () => { clearTimeout(pt); pt = setTimeout(() => { st.q = qEl.value; render(); }, 120); });
+    $("#pearlClear").addEventListener("click", () => { st.cat = ""; st.who = ""; st.q = ""; render(); });
+    $("#pearlRandom").addEventListener("click", () => {
+      const cards = $$("#pearlsGrid .pearl-card");
+      if (cards.length) {
+        const pick = cards[Math.floor(Math.random() * cards.length)];
+        pick.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+        pick.animate([{ boxShadow: "0 0 0 3px var(--acc)" }, { boxShadow: "0 0 0 0 transparent" }], { duration: 1600 });
+      }
+    });
+    render();
+  };
+
+  /* ======================================================
      ESTADÍSTICAS
      ====================================================== */
   INIT.stats = () => {
@@ -544,6 +666,8 @@
       // pie de tarjeta: veredictos como rival principal + enlace a incidentes
       const mine = ALL.filter((i) => i.main === key), tot = ALL.filter((i) => i.all.includes(key)).length;
       const vs = { S: 0, P: 0, N: 0 }; mine.forEach((i) => vs[i.v]++);
+      const rchat = CHATS.rivals?.[key];
+      if (rchat) card.insertAdjacentHTML("beforeend", renderChat(rchat, { head: rchat.head || `Dani vs ${card.dataset.key}`, sub: rchat.sub || "Fragmento real", icon: "monster" }));
       card.insertAdjacentHTML("beforeend", `<div class="rival-foot">${mine.length ? `<span class="mini">Veredicto cuando es el rival principal (${mine.length}): 🟢 ${vs.S} · 🟡 ${vs.P} · 🔴 ${vs.N}</span><div class="stack">${["S", "P", "N"].map((v) => `<i class="${v.toLowerCase()}" style="width:${(vs[v] / mine.length) * 100}%"></i>`).join("")}</div>` : ""}<button class="btn-ghost sm" data-rival="${key}">Ver sus ${tot} incidentes →</button></div>`);
     });
     const cg = svgEl("g", { class: "center" }, nodes);
@@ -570,11 +694,20 @@
     const show = (i) => {
       const e = entries[i];
       $$(".vrow", chart).forEach((r) => r.classList.toggle("on", +r.dataset.i === i));
-      det.innerHTML = `<div class="word">${esc(e.word)}</div><p class="fn">${$(".fn", e.el).innerHTML}</p><dl>${$$(".row span", e.el).map((s) => { const [k, ...v] = s.innerHTML.split(":"); return `<div><dt>${k}</dt><dd>${v.join(":")}</dd></div>`; }).join("")}</dl>`;
+      const dchat = CHATS.dict?.[e.word];
+      det.innerHTML = `<div class="word">${esc(e.word)}</div><p class="fn">${$(".fn", e.el).innerHTML}</p><dl>${$$(".row span", e.el).map((s) => { const [k, ...v] = s.innerHTML.split(":"); return `<div><dt>${k}</dt><dd>${v.join(":")}</dd></div>`; }).join("")}</dl>${dchat ? `<div class="vocab-chat"><p class="vocab-chat-lbl">Uso real en el chat</p>${renderChat(dchat, { head: dchat.head || "El Puto Circo", sub: dchat.sub || "", icon: "monster" })}</div>` : ""}`;
     };
     chart.addEventListener("click", (ev) => { const b = ev.target.closest(".vrow"); if (b) show(+b.dataset.i); });
     show(entries.indexOf(sorted[0]));
     onVisible(chart, () => $$(".fl", chart).forEach((f, i) => setTimeout(() => (f.style.width = f.dataset.target + "%"), i * 50)), { threshold: 0.2 });
+    // chats en Apodos y Patrones
+    const evoCards = $$("#g-apodos ~ .evo .evo-card");
+    ["prensas", "perchita", "gm"].forEach((k, idx) => {
+      if (evoCards[idx] && CHATS.nicknames?.[k]) evoCards[idx].insertAdjacentHTML("beforeend", renderChat(CHATS.nicknames[k], { head: CHATS.nicknames[k].head || "Origen del apodo", sub: CHATS.nicknames[k].sub || "", icon: "monster" }));
+    });
+    $$("#g-patrones + .patterns details.pat .body").forEach((body, idx) => {
+      if (CHATS.patterns?.[idx]) body.insertAdjacentHTML("beforeend", renderChat(CHATS.patterns[idx], { head: CHATS.patterns[idx].head || `Prueba · Patrón ${String(idx + 1).padStart(2, "0")}`, sub: CHATS.patterns[idx].sub || "", icon: "monster" }));
+    });
     // flip
     const f = $("#flipCard"), t = () => f.classList.toggle("flipped");
     f.addEventListener("click", t); f.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); t(); } });
